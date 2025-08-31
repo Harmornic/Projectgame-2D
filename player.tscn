@@ -6,9 +6,15 @@
 
 [node name="Player" type="Node2D"]
 
+<<<<<<< HEAD
+[node name="215641" type="Sprite2D" parent="."]
+position = Vector2(248, 306)
+scale = Vector2(0.405235, 0.394381)
+=======
 [node name="Sprite-0025" type="Sprite2D" parent="."]
 position = Vector2(724, 425)
 scale = Vector2(7.415, 2.384)
+>>>>>>> 5ad5d7ccb18c65d1f620ed3f5f6481cd507ada48
 texture = ExtResource("1_4flbx")
 <<<<<<< HEAD
 =======
