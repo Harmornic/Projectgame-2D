@@ -5,6 +5,10 @@
 [node name="Mob" type="Node2D"]
 
 [node name="MouseRun" type="Sprite2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2(470, 321)
 scale = Vector2(17.4375, 3.01042)
+=======
+position = Vector2(345, 343)
+>>>>>>> Stashed changes
 texture = ExtResource("1_dy6sc")
