@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0ud7te6t3lce"]
+
+<<<<<<< Updated upstream
+[ext_resource type="Texture2D" uid="uid://dmvbmkhfgiba" path="res://Sprite-0025.png" id="1_4flbx"]
+[ext_resource type="PackedScene" path="res://mob.tscn" id="2_onrkg"]
+
+[node name="Player" type="Node2D"]
+
+<<<<<<< HEAD
+[node name="215641" type="Sprite2D" parent="."]
+position = Vector2(248, 306)
+scale = Vector2(0.405235, 0.394381)
+=======
+[node name="Sprite-0025" type="Sprite2D" parent="."]
+position = Vector2(724, 425)
+scale = Vector2(7.415, 2.384)
+>>>>>>> 5ad5d7ccb18c65d1f620ed3f5f6481cd507ada48
+texture = ExtResource("1_4flbx")
+<<<<<<< HEAD
+=======
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sh265"]
+load_path = "res://.godot/imported/Sprite-0020.png-dcbcbc8c85fcba96d50bc5924d3ab35f.ctex"
+
+[node name="Player" type="Node2D"]
+
+[node name="Sprite-0020" type="Sprite2D" parent="."]
+position = Vector2(680, 258)
+texture = SubResource("CompressedTexture2D_sh265")
+>>>>>>> Stashed changes
+=======
+
+[node name="Mob" parent="." instance=ExtResource("2_onrkg")]
+
+[node name="Mob2" parent="." instance=ExtResource("2_onrkg")]
+>>>>>>> a3d768e9a5809ca3d1528808f79a087558a070bd
