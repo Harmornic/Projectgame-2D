@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b3qehff00goop"]
+[gd_scene load_steps=0 format=3 uid="uid://b3qehff00goop"]
 
 [node name="Mob" type="Node2D"]
 <<<<<<< HEAD
