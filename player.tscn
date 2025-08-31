@@ -1,15 +1,3 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0ud7te6t3lce"]
-
-[ext_resource type="Texture2D" uid="uid://dmvbmkhfgiba" path="res://Sprite-0025.png" id="1_4flbx"]
-[ext_resource type="PackedScene" path="res://mob.tscn" id="2_onrkg"]
+[gd_scene format=3 uid="uid://d0ud7te6t3lce"]
 
 [node name="Player" type="Node2D"]
-
-[node name="Sprite-0025" type="Sprite2D" parent="."]
-position = Vector2(724, 425)
-scale = Vector2(7.415, 2.384)
-texture = ExtResource("1_4flbx")
-
-[node name="Mob" parent="." instance=ExtResource("2_onrkg")]
-
-[node name="Mob2" parent="." instance=ExtResource("2_onrkg")]
