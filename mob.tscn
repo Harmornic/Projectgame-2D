@@ -1,3 +1,10 @@
-[gd_scene load_steps=0 format=3 uid="uid://cnsx18ii0osxu"]
+[gd_scene load_steps=2 format=3 uid="uid://cnsx18ii0osxu"]
+
+[ext_resource type="Texture2D" uid="uid://bpe32w8h7fvs8" path="res://MouseRun.png" id="1_dy6sc"]
 
 [node name="Mob" type="Node2D"]
+
+[node name="MouseRun" type="Sprite2D" parent="."]
+position = Vector2(470, 321)
+scale = Vector2(17.4375, 3.01042)
+texture = ExtResource("1_dy6sc")
