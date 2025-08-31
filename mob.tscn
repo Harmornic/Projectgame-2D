@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://b3qehff00goop"]
 
 [node name="Mob" type="Node2D"]
+<<<<<<< HEAD
+=======
+
+[node name="MouseRun" type="Sprite2D" parent="."]
+<<<<<<< Updated upstream
+position = Vector2(470, 321)
+scale = Vector2(17.4375, 3.01042)
+=======
+position = Vector2(345, 343)
+>>>>>>> Stashed changes
+texture = ExtResource("1_dy6sc")
+>>>>>>> 5ad5d7ccb18c65d1f620ed3f5f6481cd507ada48
