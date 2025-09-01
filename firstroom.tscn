@@ -7,8 +7,8 @@
 [node name="Firstroom" type="Node2D"]
 
 [node name="Img0920" type="Sprite2D" parent="."]
-position = Vector2(577.667, 317.5)
-scale = Vector2(0.597222, 0.597222)
+position = Vector2(573, 320)
+scale = Vector2(0.602083, 0.601852)
 texture = ExtResource("1_kmq28")
 
 [node name="00Ec04f55f2Cd755" type="Sprite2D" parent="."]
