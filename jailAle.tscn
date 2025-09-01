@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj5qquod3hp7f"]
+
+[ext_resource type="Texture2D" uid="uid://bmtem5pih5eaf" path="res://acess/Jail1.png" id="1_j5okh"]
+[ext_resource type="Texture2D" uid="uid://da1dmy04gy8tf" path="res://acess/jail1/door.png" id="2_exx4y"]
+[ext_resource type="PackedScene" uid="uid://tbujwbp55cud" path="res://Key.tscn" id="3_j5okh"]
+
+[node name="JailAle" type="Node2D"]
+
+[node name="Jail1" type="Sprite2D" parent="."]
+position = Vector2(575, 327)
+scale = Vector2(1.95578, 1.58115)
+texture = ExtResource("1_j5okh")
+
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(355, 261)
+scale = Vector2(1.53535, 1.49627)
+texture = ExtResource("2_exx4y")
+
+[node name="Key" parent="." instance=ExtResource("3_j5okh")]
+position = Vector2(830, 416)

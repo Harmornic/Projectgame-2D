@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb13dywhqhq6j"
-path="res://.godot/imported/Test interrac.png-8162d9179c9aba9ba10fdf6a463a7e0f.ctex"
+path="res://.godot/imported/Testinterrac.png-bacb730de2c20114e90b4eec92b2e8cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://acess/jail1/Test interrac.png"
-dest_files=["res://.godot/imported/Test interrac.png-8162d9179c9aba9ba10fdf6a463a7e0f.ctex"]
+source_file="res://acess/jail1/Testinterrac.png"
+dest_files=["res://.godot/imported/Testinterrac.png-bacb730de2c20114e90b4eec92b2e8cb.ctex"]
 
 [params]
 

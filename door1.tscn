@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dijcdjxqmef7i"]
+
+[ext_resource type="Texture2D" uid="uid://xjxryo2p7fv2" path="res://acess/IMG_0921.png" id="1_rqu1w"]
+[ext_resource type="Script" uid="uid://2rjeb8tdoe86" path="res://door1.gd" id="1_tsil1"]
+[ext_resource type="Texture2D" uid="uid://cva6jrvig7ot0" path="res://3x.webp" id="3_g16p4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsil1"]
+size = Vector2(345.25, 503)
+
+[node name="Door1" type="Area2D"]
+script = ExtResource("1_tsil1")
+normal_tex = ExtResource("1_rqu1w")
+hover_tex = ExtResource("3_g16p4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 0)
+texture = ExtResource("1_rqu1w")
+region_enabled = true
+region_rect = Rect2(379.869, 238.971, 528.18, 627.214)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.625, -19.5)
+shape = SubResource("RectangleShape2D_tsil1")

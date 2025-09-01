@@ -1,22 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgjtbwhkgirii"]
+[gd_scene load_steps=5 format=3 uid="uid://bgjtbwhkgirii"]
 
 [ext_resource type="Texture2D" uid="uid://cuvdxiu53kk5j" path="res://acess/IMG_0920.jpg" id="1_kmq28"]
-[ext_resource type="Texture2D" uid="uid://13n0fmo2y38a" path="res://acess/00ec04f55f2cd755.png" id="2_qklje"]
-[ext_resource type="Texture2D" uid="uid://xjxryo2p7fv2" path="res://acess/IMG_0921.png" id="3_faovc"]
+[ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="3_kmq28"]
+[ext_resource type="PackedScene" uid="uid://tbujwbp55cud" path="res://Key.tscn" id="3_qklje"]
+[ext_resource type="Texture2D" uid="uid://dmvbmkhfgiba" path="res://Sprite-0025.png" id="4_qklje"]
 
 [node name="Firstroom" type="Node2D"]
 
-[node name="Img0920" type="Sprite2D" parent="."]
-position = Vector2(573, 320)
+[node name="jail1" type="Sprite2D" parent="."]
+position = Vector2(575, 322)
 scale = Vector2(0.602083, 0.601852)
 texture = ExtResource("1_kmq28")
 
-[node name="00Ec04f55f2Cd755" type="Sprite2D" parent="."]
-position = Vector2(540, 318)
-scale = Vector2(0.714815, 0.714815)
-texture = ExtResource("2_qklje")
+[node name="Key" parent="." instance=ExtResource("3_qklje")]
+position = Vector2(769, 463)
 
-[node name="Img0921" type="Sprite2D" parent="."]
-position = Vector2(547, 316)
-scale = Vector2(0.609259, 0.609259)
-texture = ExtResource("3_faovc")
+[node name="Door1" parent="." instance=ExtResource("3_kmq28")]
+position = Vector2(369, 279)
+scale = Vector2(0.908184, 0.84)
+hover_tex = ExtResource("4_qklje")
