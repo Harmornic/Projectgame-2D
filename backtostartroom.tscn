@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8cyhhwvnsol7"]
+
+[ext_resource type="Script" uid="uid://cwokd37opky0f" path="res://backtostartroom.gd" id="1_506me"]
+[ext_resource type="Texture2D" uid="uid://doe3gmehlgpf0" path="res://acess/Bigroom/downarrow.png" id="1_ax4ht"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ax4ht"]
+size = Vector2(81.5, 64)
+
+[node name="backtostartroom" type="Area2D"]
+script = ExtResource("1_506me")
+
+[node name="Downarrow" type="Sprite2D" parent="."]
+position = Vector2(2, -2)
+rotation = -0.00977836
+scale = Vector2(0.96273, 0.882716)
+skew = -0.66497
+texture = ExtResource("1_ax4ht")
+region_enabled = true
+region_rect = Rect2(891.525, 133.431, 154.068, 128.39)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ax4ht")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpidwhod8dj6i"]
+
+[ext_resource type="Script" uid="uid://c0pkl85vtmhnk" path="res://arrowtobigroom2.gd" id="1_82kck"]
+[ext_resource type="Texture2D" uid="uid://d2ah4ogkp3j36" path="res://acess/Bigroom/leftarrow.png" id="2_wf6bc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfsvx"]
+size = Vector2(104, 53.5)
+
+[node name="Arrowtobigroom2" type="Area2D"]
+script = ExtResource("1_82kck")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -1.19209e-07)
+scale = Vector2(1.18939, 0.956186)
+texture = ExtResource("2_wf6bc")
+region_enabled = true
+region_rect = Rect2(800.225, 73.5156, 99.8591, 97.006)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 1)
+shape = SubResource("RectangleShape2D_sfsvx")

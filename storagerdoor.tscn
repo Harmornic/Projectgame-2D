@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://noo8cesuxfgg"]
+
+[ext_resource type="Texture2D" uid="uid://tyx4dq2xfb2i" path="res://acess/bigroom2/storagedoor.png" id="1_v8g0f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilubh"]
+size = Vector2(184, 461)
+
+[node name="Storagerdoor" type="Area2D"]
+
+[node name="Storagedoor" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_v8g0f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9, -3.5)
+shape = SubResource("RectangleShape2D_ilubh")

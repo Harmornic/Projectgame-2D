@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b76dp4e2gjw71"]
+
+[ext_resource type="Texture2D" uid="uid://bapdn1xtkmjpx" path="res://acess/puzzleroom/puzzleemthy.png" id="1_brtpf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18ixp"]
+size = Vector2(322, 138)
+
+[node name="puzzleemthy" type="Area2D"]
+
+[node name="Puzzleemthy" type="Sprite2D" parent="."]
+position = Vector2(4, -2)
+texture = ExtResource("1_brtpf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -4)
+shape = SubResource("RectangleShape2D_18ixp")

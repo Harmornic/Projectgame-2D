@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcxh1sgsmh7hv"]
+
+[ext_resource type="Texture2D" uid="uid://c7c0pxhksdbe8" path="res://acess/bigroom2/cavydoor.png" id="1_pdo1t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ewtbo"]
+size = Vector2(223, 534.5)
+
+[node name="Cavydoor" type="Node2D"]
+
+[node name="Cavydoor" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_pdo1t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10.5, 8.75)
+shape = SubResource("RectangleShape2D_ewtbo")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://btddatnqnici4"]
+
+[ext_resource type="Script" uid="uid://dya76h6kn84ri" path="res://lockdoor.gd" id="1_0qv5v"]
+[ext_resource type="Texture2D" uid="uid://xjxryo2p7fv2" path="res://acess/IMG_0921.png" id="1_4ihch"]
+[ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="3_uys5a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qpbnc"]
+size = Vector2(198.5, 370)
+
+[node name="Lockdoor" type="Area2D"]
+script = ExtResource("1_0qv5v")
+normal_tex = ExtResource("1_4ihch")
+hover_tex = ExtResource("3_uys5a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 6)
+scale = Vector2(0.618889, 0.643959)
+texture = ExtResource("1_4ihch")
+region_enabled = true
+region_rect = Rect2(423.614, 241.85, 450.793, 567.77)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 4)
+shape = SubResource("RectangleShape2D_qpbnc")

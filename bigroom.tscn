@@ -3,11 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://bibn2ot4a1370" path="res://acess/Bigroom/backgrond.jpg" id="1_r15gn"]
 [ext_resource type="Texture2D" uid="uid://b61y65oq635c6" path="res://acess/Bigroom/Cavydoor.png" id="2_sycxv"]
 [ext_resource type="Texture2D" uid="uid://c20rgttehntvs" path="res://acess/Bigroom/Exitdoor.png" id="4_4ua0h"]
-[ext_resource type="Texture2D" uid="uid://doe3gmehlgpf0" path="res://acess/Bigroom/downarrow.png" id="5_4ua0h"]
-[ext_resource type="Texture2D" uid="uid://d2ah4ogkp3j36" path="res://acess/Bigroom/leftarrow.png" id="6_gm48p"]
-[ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="6_um6ld"]
-[ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="7_0negp"]
-[ext_resource type="Script" uid="uid://6rwkqog1dsa" path="res://emptyroom.gd" id="7_gm48p"]
+[ext_resource type="PackedScene" uid="uid://b8cyhhwvnsol7" path="res://backtostartroom.tscn" id="7_gm48p"]
+[ext_resource type="PackedScene" uid="uid://dpidwhod8dj6i" path="res://arrowtobigroom2.tscn" id="7_um6ld"]
+[ext_resource type="PackedScene" uid="uid://btddatnqnici4" path="res://lockdoor.tscn" id="9_0negp"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="9_4qfpx"]
+
+[sub_resource type="FontVariation" id="FontVariation_mknfx"]
+base_font = ExtResource("9_4qfpx")
 
 [node name="Bigroom" type="Node2D"]
 
@@ -31,30 +33,22 @@ texture = ExtResource("4_4ua0h")
 region_enabled = true
 region_rect = Rect2(1576.27, 367.387, 265.34, 687.601)
 
-[node name="Downarrow" type="Sprite2D" parent="."]
-position = Vector2(675, 624)
-rotation = -0.00977836
-scale = Vector2(0.727273, 0.65625)
-skew = -0.66497
-texture = ExtResource("5_4ua0h")
-region_enabled = true
-region_rect = Rect2(891.525, 133.431, 154.068, 128.39)
-
-[node name="Leftarrow" type="Sprite2D" parent="."]
-position = Vector2(174, 620)
-scale = Vector2(0.883838, 0.881443)
-texture = ExtResource("6_gm48p")
-region_enabled = true
-region_rect = Rect2(800.225, 73.5156, 99.8591, 97.006)
-
-[node name="emptyroom" parent="." instance=ExtResource("6_um6ld")]
-position = Vector2(600, 396)
-scale = Vector2(0.634208, 0.710549)
-script = ExtResource("7_gm48p")
-hover_tex = ExtResource("7_0negp")
-
 [node name="PopupLabel" type="Label" parent="."]
-offset_left = 622.0
-offset_top = 97.0
-offset_right = 662.0
-offset_bottom = 120.0
+offset_left = 420.0
+offset_top = 101.0
+offset_right = 750.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0.325441, 0.325441, 0.325441, 1)
+theme_override_fonts/font = SubResource("FontVariation_mknfx")
+theme_override_font_sizes/font_size = 66
+metadata/_edit_use_anchors_ = true
+
+[node name="Lockdoor" parent="." instance=ExtResource("9_0negp")]
+position = Vector2(603, 379)
+
+[node name="Backtostartroom" parent="." instance=ExtResource("7_gm48p")]
+position = Vector2(740, 619)
+scale = Vector2(1.41, 1.41)
+
+[node name="Arrowtobigroom2" parent="." instance=ExtResource("7_um6ld")]
+position = Vector2(134, 624)

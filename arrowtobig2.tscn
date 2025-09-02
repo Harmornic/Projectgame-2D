@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb1xsg4cpaqtb"]
+
+[ext_resource type="Texture2D" uid="uid://doe3gmehlgpf0" path="res://acess/Bigroom/downarrow.png" id="1_rb3oo"]
+
+[node name="Arrowtobig2" type="Area2D"]
+
+[node name="Downarrow" type="Sprite2D" parent="."]
+position = Vector2(1, -4)
+texture = ExtResource("1_rb3oo")
+region_enabled = true
+region_rect = Rect2(920.056, 136.284, 102.712, 108.418)

@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://dei6ma30g7jdd"]
+
+[ext_resource type="Texture2D" uid="uid://cuvdxiu53kk5j" path="res://acess/IMG_0920.jpg" id="1_hgbx0"]
+[ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="2_lq32p"]
+[ext_resource type="Script" uid="uid://depwn8t7rda58" path="res://door1butfinish.gd" id="3_hgbx0"]
+[ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="3_i4fav"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="4_dbrj8"]
+[ext_resource type="Texture2D" uid="uid://f8vglpt2wbna" path="res://acess/jail1/bed1.png" id="5_c7odn"]
+
+[sub_resource type="FontVariation" id="FontVariation_lxmia"]
+fallbacks = Array[Font]([ExtResource("4_dbrj8")])
+base_font = ExtResource("4_dbrj8")
+
+[node name="Firstroombutfinish" type="Node2D"]
+position = Vector2(4, 0)
+
+[node name="jail1" type="Sprite2D" parent="."]
+position = Vector2(575, 322)
+scale = Vector2(0.602083, 0.601852)
+texture = ExtResource("1_hgbx0")
+
+[node name="Door1butfinish" parent="." instance=ExtResource("2_lq32p")]
+position = Vector2(325, 313)
+scale = Vector2(0.634208, 0.710549)
+script = ExtResource("3_hgbx0")
+hover_tex = ExtResource("3_i4fav")
+
+[node name="PopupLabel" type="Label" parent="."]
+visible = false
+offset_left = 207.0
+offset_top = 97.0
+offset_right = 1019.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(0.635658, 0.628392, 0.622166, 1)
+theme_override_fonts/font = SubResource("FontVariation_lxmia")
+theme_override_font_sizes/font_size = 45
+text = "ประตูล็อคอยู่ ต้องมีกุญแจก่อน"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bed1" type="Sprite2D" parent="."]
+position = Vector2(754, 449)
+scale = Vector2(0.837636, 0.717836)
+texture = ExtResource("5_c7odn")
+region_enabled = true
+region_rect = Rect2(802.44, 648.811, 767.489, 342.374)
