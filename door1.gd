@@ -5,6 +5,9 @@ extends Area2D
 @export var sprite_path: NodePath = NodePath("Sprite2D")
 
 @onready var sprite: Sprite2D = get_node(sprite_path)
+@onready var door_sound: AudioStreamPlayer = $DoorSound # แก้ไขตรงนี้
+@onready var locked_sound: AudioStreamPlayer = $LockedSound # แก้ไขตรงนี้
+@onready var popup_label: Label = get_node("../PopupLabel") # โหนดนี้ยังอยู่ที่ระดับเดียวกับ Door1
 
 func _ready() -> void:
 	if normal_tex:
@@ -23,12 +26,14 @@ func _on_mouse_exited() -> void:
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if Global.has_key:
+			door_sound.play()
+			await door_sound.finished
 			get_tree().change_scene_to_file("res://bigroom.tscn")
 		else:
+			locked_sound.play() # สั่งให้เล่นเสียงประตูล็อก
 			show_locked_popup()
 
 func show_locked_popup():
-	var popup_label = get_tree().get_current_scene().get_node("PopupLabel")
 	if popup_label:
 		popup_label.text = "ประตูล็อคอยู่ ต้องมีกุญแจก่อน"
 		popup_label.visible = true
