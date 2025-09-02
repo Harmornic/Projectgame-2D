@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2hgfdr4uh85w"]
+
+[ext_resource type="Script" uid="uid://d1y2xcybv53nt" path="res://arrowtobig_2_aftergetstone.gd" id="1_7rimt"]
+[ext_resource type="Texture2D" uid="uid://doe3gmehlgpf0" path="res://acess/Bigroom/downarrow.png" id="2_nv8rp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_715m7"]
+size = Vector2(58, 86)
+
+[node name="arrowtobig2aftergetstone" type="Area2D"]
+script = ExtResource("1_7rimt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, -2)
+texture = ExtResource("2_nv8rp")
+region_enabled = true
+region_rect = Rect2(937.837, 140.881, 67.3193, 104.522)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -5)
+shape = SubResource("RectangleShape2D_715m7")

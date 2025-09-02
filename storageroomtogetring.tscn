@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=3 uid="uid://d0djl4uwskfef"]
+
+[ext_resource type="Texture2D" uid="uid://bvb0ek2i31ho5" path="res://acess/storage/background.jpg" id="1_1sf42"]
+[ext_resource type="PackedScene" uid="uid://csardc7ccyw0c" path="res://stone.tscn" id="2_3ylwg"]
+[ext_resource type="Texture2D" uid="uid://dn0imxrtv71uh" path="res://acess/storage/stone - Copy.png" id="3_g0u44"]
+[ext_resource type="AudioStream" uid="uid://dw1q16igtw0m1" path="res://acess/storage/stoneblockdragwoodgrind-82327.mp3" id="4_wnmno"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="6_da67k"]
+[ext_resource type="PackedScene" uid="uid://pw6j4i4yrmwx" path="res://lockerhavering.tscn" id="7_1sf42"]
+[ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="7_gt87m"]
+
+[sub_resource type="FontVariation" id="FontVariation_xsl6f"]
+base_font = ExtResource("6_da67k")
+
+[node name="storageroomtogetring" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(575.5, 322.5)
+scale = Vector2(0.601563, 0.60463)
+texture = ExtResource("1_1sf42")
+
+[node name="stone" parent="." instance=ExtResource("2_3ylwg")]
+position = Vector2(585, 468)
+hover_tex = ExtResource("3_g0u44")
+
+[node name="stonegrab" type="AudioStreamPlayer" parent="stone"]
+stream = ExtResource("4_wnmno")
+volume_db = -27.171
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_left = 368.0
+offset_top = 109.0
+offset_right = 799.0
+offset_bottom = 184.0
+theme_override_fonts/font = SubResource("FontVariation_xsl6f")
+theme_override_font_sizes/font_size = 66
+metadata/_edit_use_anchors_ = true
+
+[node name="Arrowtobig2" parent="." instance=ExtResource("7_gt87m")]
+position = Vector2(607, 616)
+
+[node name="Lockerhavering" parent="." instance=ExtResource("7_1sf42")]
+position = Vector2(299, 468)
+scale = Vector2(0.8, 0.8)

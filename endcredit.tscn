@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpvgjjr86yn8c"]
+
+[ext_resource type="Script" uid="uid://dxabrwemcr2ty" path="res://video_stream_player.gd" id="1_og1xb"]
+
+[node name="endcredit" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1154.0
+offset_bottom = 650.0
+script = ExtResource("1_og1xb")

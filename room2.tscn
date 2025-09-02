@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://w51gv5o23b3c"]
+[gd_scene load_steps=7 format=3 uid="uid://w51gv5o23b3c"]
 
 [ext_resource type="Texture2D" uid="uid://c5qiw73nj1coq" path="res://acess/emthyroom/backgrond.jpg" id="1_7on73"]
 [ext_resource type="PackedScene" uid="uid://danl1ckl76lfc" path="res://axe.tscn" id="2_o70tu"]
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="3_08gkj"]
+[ext_resource type="Script" uid="uid://cfpeg48hh3sfg" path="res://arrowtobig2first.gd" id="5_7on73"]
 [ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="5_kgaip"]
 
 [sub_resource type="FontVariation" id="FontVariation_j7v4n"]
@@ -34,3 +35,4 @@ skew = 0.127409
 
 [node name="Arrowtobig2" parent="." instance=ExtResource("5_kgaip")]
 position = Vector2(586, 602)
+script = ExtResource("5_7on73")

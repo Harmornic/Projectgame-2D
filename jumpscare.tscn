@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3f25uqeml6ry"]
+
+[ext_resource type="Texture2D" uid="uid://b2eful8a6ia2t" path="res://acess/cavyRoom/background.jpg" id="1_dkw4f"]
+[ext_resource type="Texture2D" uid="uid://c8oqlll5y2733" path="res://acess/cavyRoom/cavy.png" id="2_6rciv"]
+[ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="3_6rciv"]
+[ext_resource type="Script" uid="uid://dtxrj0uqvtgm0" path="res://arrowtobig2after.gd" id="4_4qc3y"]
+
+[node name="jumpscare" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(579.5, 328.5)
+scale = Vector2(0.604688, 0.615741)
+texture = ExtResource("1_dkw4f")
+
+[node name="Cavy" type="Sprite2D" parent="."]
+position = Vector2(577, 335)
+scale = Vector2(0.771875, 0.734259)
+texture = ExtResource("2_6rciv")
+
+[node name="Arrowtobig2after" parent="." instance=ExtResource("3_6rciv")]
+position = Vector2(578, 615)
+script = ExtResource("4_4qc3y")
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

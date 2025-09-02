@@ -5,7 +5,7 @@ extends Area2D
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var door_sound: AudioStreamPlayer = $stonegrab # แก้ไขตรงนี้
-@onready var popup_label: Label = get_node("../../PopupLabel") # พาธของ PopupLabel
+@onready var popup_label: Label = $"../PopupLabel"
 
 func _ready() -> void:
 	if normal_tex:

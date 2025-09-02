@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cokmw3yslw364"]
+
+[ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="1_dy5u8"]
+[ext_resource type="Texture2D" uid="uid://b3ymacihvf0hf" path="res://acess/storage/getring.jpg" id="1_vrohq"]
+
+[node name="getring" type="Node2D"]
+
+[node name="Getring" type="Sprite2D" parent="."]
+position = Vector2(572, 324)
+scale = Vector2(0.601042, 0.612963)
+texture = ExtResource("1_vrohq")
+
+[node name="ArrowFinal" parent="." instance=ExtResource("1_dy5u8")]
+position = Vector2(590, 566)

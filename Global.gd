@@ -4,3 +4,5 @@ var has_key: bool = false
 var has_axe: bool = false
 var has_clicked_stone: bool = false
 var has_key2: bool = false
+var has_puzzle_key: bool = false
+var has_keypuzzle: bool = false

@@ -1,6 +1,7 @@
 extends Area2D
 
-@onready var popup_label: Label = get_node("../../PopupLabel")  # ปรับ path ให้ตรงกับตำแหน่งจริงของ PopupLabel
+@onready var popup_label: Label = $"../PopupLabel"
+
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:

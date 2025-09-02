@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dks4r1ielnmug"
-path="res://.godot/imported/wood_AT.png-3c154e5c31af34a474d526c05db9d109.ctex"
+path="res://.godot/imported/wood_AT.png-281d1a4dc286eae1a17baabdfc7eb20f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://acess/CavyRoom/wood_AT.png"
-dest_files=["res://.godot/imported/wood_AT.png-3c154e5c31af34a474d526c05db9d109.ctex"]
+source_file="res://acess/cavyRoom/wood_AT.png"
+dest_files=["res://.godot/imported/wood_AT.png-281d1a4dc286eae1a17baabdfc7eb20f.ctex"]
 
 [params]
 

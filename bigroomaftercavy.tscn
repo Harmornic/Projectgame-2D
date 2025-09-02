@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://cdtp46qmf5ije"]
+
+[ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_bk7cx"]
+[ext_resource type="PackedScene" uid="uid://crvngaun6lm1y" path="res://emptydoor.tscn" id="2_ycnw7"]
+[ext_resource type="PackedScene" uid="uid://noo8cesuxfgg" path="res://storagerdoor.tscn" id="3_i00of"]
+[ext_resource type="AudioStream" uid="uid://dfvoqum0f77hw" path="res://knock-on-a-door-327172.mp3" id="4_rdvc0"]
+[ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="5_6kjb8"]
+[ext_resource type="PackedScene" uid="uid://biu0cg3jrpr1a" path="res://puzzledooraftercavy.tscn" id="7_6i116"]
+[ext_resource type="PackedScene" uid="uid://drg35leunbrcu" path="res://exittrue.tscn" id="8_wacxq"]
+
+[node name="bigroomaftercavy" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(574.5, 326.75)
+scale = Vector2(0.600521, 0.60787)
+texture = ExtResource("1_bk7cx")
+
+[node name="emptyroom" parent="." instance=ExtResource("2_ycnw7")]
+position = Vector2(154, 361)
+scale = Vector2(0.835, 0.835)
+
+[node name="Storagerdoor" parent="." instance=ExtResource("3_i00of")]
+position = Vector2(828, 265)
+scale = Vector2(0.845, 0.845)
+
+[node name="LockedSound" type="AudioStreamPlayer" parent="Storagerdoor"]
+stream = ExtResource("4_rdvc0")
+volume_db = -7.495
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="Storagerdoor"]
+stream = ExtResource("5_6kjb8")
+volume_db = -11.357
+
+[node name="exittrue" parent="." instance=ExtResource("8_wacxq")]
+position = Vector2(557, 195)
+scale = Vector2(0.785, 0.865)
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="puzzledooraftercavy" parent="." instance=ExtResource("7_6i116")]
+position = Vector2(314, 252)
+scale = Vector2(1.005, 0.773)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c6qvipq20q0dt"]
+[gd_scene load_steps=12 format=3 uid="uid://bbr1l7s5jmx80"]
 
 [ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_oxusw"]
 [ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="5_6t2ie"]
@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://crvngaun6lm1y" path="res://emptydoor.tscn" id="6_y6of1"]
 [ext_resource type="PackedScene" uid="uid://tpu6a8bjyhlf" path="res://arrowtobigroom.tscn" id="7_y6of1"]
 [ext_resource type="Script" uid="uid://ieua154d33hq" path="res://arrowtobigroom.gd" id="8_oxusw"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="10_6t2ie"]
+
+[sub_resource type="FontVariation" id="FontVariation_3rxxu"]
+base_font = ExtResource("10_6t2ie")
 
 [node name="bigroom2" type="Node2D"]
 
@@ -54,5 +58,9 @@ position = Vector2(561, 604)
 script = ExtResource("8_oxusw")
 
 [node name="PopupLabel" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 368.0
+offset_top = 109.0
+offset_right = 799.0
+offset_bottom = 184.0
+theme_override_fonts/font = SubResource("FontVariation_3rxxu")
+theme_override_font_sizes/font_size = 66

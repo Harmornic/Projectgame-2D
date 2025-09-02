@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://biu0cg3jrpr1a"]
+
+[ext_resource type="Script" uid="uid://y86yt8xn2xfq" path="res://puzzledooraftercavy.gd" id="1_e30dw"]
+[ext_resource type="Texture2D" uid="uid://8abujue5vc7l" path="res://acess/bigroom2/puzzledoor.png" id="1_if38m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e30dw"]
+size = Vector2(168, 447)
+
+[node name="puzzledooraftercavy" type="Area2D"]
+script = ExtResource("1_e30dw")
+
+[node name="Spirte2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_if38m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 1.5)
+shape = SubResource("RectangleShape2D_e30dw")

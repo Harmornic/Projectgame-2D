@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://jo15jwa3rk05"]
+
+[ext_resource type="Script" uid="uid://bmd1gxsv36fvs" path="res://keypuzzle.gd" id="1_5frya"]
+[ext_resource type="Texture2D" uid="uid://bv2t4sd4gam6w" path="res://acess/jail1/key.png" id="1_v6f3r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5frya"]
+size = Vector2(107, 51)
+
+[node name="keypuzzle" type="Area2D"]
+script = ExtResource("1_5frya")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_v6f3r")
+region_enabled = true
+region_rect = Rect2(72, 56, 96, 69)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.5, -2.5)
+shape = SubResource("RectangleShape2D_5frya")

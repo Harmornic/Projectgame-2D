@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://drg35leunbrcu"]
+[gd_scene load_steps=4 format=3 uid="uid://drg35leunbrcu"]
 
-[ext_resource type="Script" path="res://exittrue.gd" id="1_1fflf"]
+[ext_resource type="Script" uid="uid://dq8432lj576te" path="res://exittrue.gd" id="1_1fflf"]
 [ext_resource type="Texture2D" uid="uid://c43ngfeqki6j0" path="res://acess/bigroom2/trueexit.png" id="1_2r6h1"]
-[ext_resource type="Texture2D" uid="uid://dgft3gqmpfjer" path="res://acess/bigroom2/trueexit_AFTER.png" id="3_me6td"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fflf"]
 size = Vector2(182, 326)
@@ -10,8 +9,6 @@ size = Vector2(182, 326)
 [node name="exittrue" type="Area2D"]
 position = Vector2(541, 322)
 script = ExtResource("1_1fflf")
-normal_tex = ExtResource("1_2r6h1")
-hover_tex = ExtResource("3_me6td")
 
 [node name="Trueexit" type="Sprite2D" parent="."]
 position = Vector2(1, -2)

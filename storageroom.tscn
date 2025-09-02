@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://clfjb5qq6gap3"]
+[gd_scene load_steps=10 format=3 uid="uid://clfjb5qq6gap3"]
 
 [ext_resource type="Texture2D" uid="uid://bvb0ek2i31ho5" path="res://acess/storage/background.jpg" id="1_xjdkg"]
 [ext_resource type="PackedScene" uid="uid://csardc7ccyw0c" path="res://stone.tscn" id="2_333hj"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="4_4pjif"]
 [ext_resource type="AudioStream" uid="uid://dw1q16igtw0m1" path="res://acess/storage/stoneblockdragwoodgrind-82327.mp3" id="4_lykea"]
 [ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="5_sspwo"]
+[ext_resource type="Script" uid="uid://cfpeg48hh3sfg" path="res://arrowtobig2first.gd" id="8_jloxv"]
 
 [sub_resource type="FontVariation" id="FontVariation_sspwo"]
 base_font = ExtResource("4_4pjif")
@@ -38,5 +39,6 @@ offset_bottom = 184.0
 theme_override_fonts/font = SubResource("FontVariation_sspwo")
 theme_override_font_sizes/font_size = 66
 
-[node name="Arrowtobig2" parent="." instance=ExtResource("5_sspwo")]
-position = Vector2(607, 616)
+[node name="Arrowtobig3" parent="." instance=ExtResource("5_sspwo")]
+position = Vector2(586, 602)
+script = ExtResource("8_jloxv")

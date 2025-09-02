@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2eful8a6ia2t"
-path="res://.godot/imported/background.jpg-c2402b2586a6776038d7ff79d8ddfa65.ctex"
+uid="uid://b3ymacihvf0hf"
+path="res://.godot/imported/getring.jpg-ee96a45752c1b944ea6cf3039bc439b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://acess/cavyRoom/background.jpg"
-dest_files=["res://.godot/imported/background.jpg-c2402b2586a6776038d7ff79d8ddfa65.ctex"]
+source_file="res://acess/storage/getring.jpg"
+dest_files=["res://.godot/imported/getring.jpg-ee96a45752c1b944ea6cf3039bc439b8.ctex"]
 
 [params]
 

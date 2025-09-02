@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://cdk085f8nuchu"]
+
+[ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_ujt6h"]
+[ext_resource type="PackedScene" uid="uid://crvngaun6lm1y" path="res://emptydoor.tscn" id="2_cvh5o"]
+[ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="3_k50q2"]
+[ext_resource type="PackedScene" uid="uid://noo8cesuxfgg" path="res://storagerdoor.tscn" id="4_7j7pi"]
+[ext_resource type="PackedScene" uid="uid://ctc313jr6omi0" path="res://puzzledoor.tscn" id="5_lclrn"]
+[ext_resource type="PackedScene" uid="uid://drg35leunbrcu" path="res://exittrue.tscn" id="6_etykm"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="7_i6mdf"]
+
+[sub_resource type="FontVariation" id="FontVariation_7qfcx"]
+base_font = ExtResource("7_i6mdf")
+
+[node name="big2roomfinal" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(574.5, 326.75)
+scale = Vector2(0.600521, 0.60787)
+texture = ExtResource("1_ujt6h")
+
+[node name="emptyroom" parent="." instance=ExtResource("2_cvh5o")]
+visible = false
+position = Vector2(154, 361)
+scale = Vector2(0.835, 0.835)
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="emptyroom"]
+stream = ExtResource("3_k50q2")
+volume_db = -11.357
+
+[node name="Storagerdoor" parent="." instance=ExtResource("4_7j7pi")]
+visible = false
+position = Vector2(828, 265)
+scale = Vector2(0.845, 0.845)
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="Storagerdoor"]
+stream = ExtResource("3_k50q2")
+volume_db = -11.357
+
+[node name="puzzledoor" parent="." instance=ExtResource("5_lclrn")]
+visible = false
+position = Vector2(314, 264)
+scale = Vector2(0.855, 0.818464)
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="puzzledoor"]
+stream = ExtResource("3_k50q2")
+volume_db = -11.357
+
+[node name="exittrue" parent="." instance=ExtResource("6_etykm")]
+position = Vector2(557, 195)
+scale = Vector2(0.785, 0.865)
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_left = 368.0
+offset_top = 109.0
+offset_right = 799.0
+offset_bottom = 184.0
+theme_override_fonts/font = SubResource("FontVariation_7qfcx")
+theme_override_font_sizes/font_size = 66

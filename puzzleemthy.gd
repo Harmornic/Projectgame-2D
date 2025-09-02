@@ -31,7 +31,7 @@ func _input_event(viewport, event, shape_idx):
 			is_clicked = true
 			if clicked_tex:
 				sprite.texture = clicked_tex
-			show_popup("คุณได้รับกุญแจดอกที่ 2")
+			show_popup("คุณได้รับกุญแจล็อคเกอร์")
 
 func show_popup(text: String):
 	if popup_label:
