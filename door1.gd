@@ -25,4 +25,12 @@ func _input_event(viewport, event, shape_idx):
 		if Global.has_key:
 			get_tree().change_scene_to_file("res://room2.tscn")
 		else:
-			print("ประตูล็อคอยู่ ต้องใช้กุญแจก่อน")  # หรือโชว์ข้อความ/เสียง
+			show_locked_popup()
+
+func show_locked_popup():
+	var popup_label = get_tree().get_current_scene().get_node("PopupLabel")
+	if popup_label:
+		popup_label.text = "ประตูล็อคอยู่ ต้องมีกุญแจก่อน"
+		popup_label.visible = true
+		await get_tree().create_timer(2.0).timeout
+		popup_label.visible = false

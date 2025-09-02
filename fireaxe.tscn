@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://tfqweho71tal"]
+[gd_scene load_steps=3 format=3 uid="uid://h48qjqfsxu2w"]
 
 [ext_resource type="Texture2D" uid="uid://cv0mtxmeimegn" path="res://acess/emthyroom/o_1585465561_1e4ihoa891c7o3m9spr4fg12npb.png" id="1_qngcr"]
 
@@ -14,5 +14,4 @@ texture = ExtResource("1_qngcr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
 position = Vector2(8.42108, -16.8422)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_siw7w")

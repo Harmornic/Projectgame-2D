@@ -1,12 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgjtbwhkgirii"]
+[gd_scene load_steps=8 format=3 uid="uid://bgjtbwhkgirii"]
 
 [ext_resource type="Texture2D" uid="uid://cuvdxiu53kk5j" path="res://acess/IMG_0920.jpg" id="1_kmq28"]
 [ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="3_kmq28"]
 [ext_resource type="PackedScene" uid="uid://tbujwbp55cud" path="res://Key.tscn" id="3_qklje"]
 [ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="4_qklje"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="5_faovc"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3nogi"]
 load_path = "res://.godot/imported/Testinterrac.png-bacb730de2c20114e90b4eec92b2e8cb.ctex"
+
+[sub_resource type="FontVariation" id="FontVariation_lxmia"]
+fallbacks = Array[Font]([ExtResource("5_faovc")])
+base_font = ExtResource("5_faovc")
 
 [node name="Firstroom" type="Node2D"]
 
@@ -23,3 +28,16 @@ hover_tex = SubResource("CompressedTexture2D_3nogi")
 position = Vector2(400, 280)
 scale = Vector2(0.91922, 0.84)
 hover_tex = ExtResource("4_qklje")
+
+[node name="PopupLabel" type="Label" parent="."]
+visible = false
+offset_left = 207.0
+offset_top = 97.0
+offset_right = 1019.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(0.635658, 0.628392, 0.622166, 1)
+theme_override_fonts/font = SubResource("FontVariation_lxmia")
+theme_override_font_sizes/font_size = 56
+text = "ประตูล็อคอยู่ ต้องมีกุญแจก่อน"
+horizontal_alignment = 1
+vertical_alignment = 1
