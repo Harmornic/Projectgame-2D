@@ -13,10 +13,10 @@ normal_tex = ExtResource("2_cxlo0")
 hover_tex = ExtResource("3_cxlo0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(863, 414)
+position = Vector2(-0.999939, -0.999969)
 scale = Vector2(0.144, 0.144)
 texture = ExtResource("2_cxlo0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(863, 414)
+position = Vector2(1, -1)
 shape = SubResource("RectangleShape2D_rot5g")

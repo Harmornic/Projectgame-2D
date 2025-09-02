@@ -23,7 +23,7 @@ func _on_mouse_exited() -> void:
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if Global.has_key:
-			get_tree().change_scene_to_file("res://room2.tscn")
+			get_tree().change_scene_to_file("res://bigroom.tscn")
 		else:
 			show_locked_popup()
 

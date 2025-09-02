@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://c0wtn3l1inluq"]
+
+[ext_resource type="Texture2D" uid="uid://bibn2ot4a1370" path="res://acess/Bigroom/backgrond.jpg" id="1_r15gn"]
+[ext_resource type="Texture2D" uid="uid://b61y65oq635c6" path="res://acess/Bigroom/Cavydoor.png" id="2_sycxv"]
+[ext_resource type="Texture2D" uid="uid://c20rgttehntvs" path="res://acess/Bigroom/Exitdoor.png" id="4_4ua0h"]
+[ext_resource type="Texture2D" uid="uid://doe3gmehlgpf0" path="res://acess/Bigroom/downarrow.png" id="5_4ua0h"]
+[ext_resource type="Texture2D" uid="uid://d2ah4ogkp3j36" path="res://acess/Bigroom/leftarrow.png" id="6_gm48p"]
+[ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="6_um6ld"]
+[ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="7_0negp"]
+[ext_resource type="Script" uid="uid://6rwkqog1dsa" path="res://emptyroom.gd" id="7_gm48p"]
+
+[node name="Bigroom" type="Node2D"]
+
+[node name="Backgrond" type="Sprite2D" parent="."]
+position = Vector2(580.5, 328)
+scale = Vector2(0.603646, 0.607407)
+texture = ExtResource("1_r15gn")
+
+[node name="Cavydoor" type="Sprite2D" parent="."]
+position = Vector2(276, 425)
+scale = Vector2(0.67439, 0.655904)
+texture = ExtResource("2_sycxv")
+region_enabled = true
+region_rect = Rect2(258.133, 430.155, 410.849, 542.092)
+
+[node name="Exitdoor" type="Sprite2D" parent="."]
+position = Vector2(1019, 438)
+rotation = 0.04094
+scale = Vector2(0.727359, 0.55131)
+texture = ExtResource("4_4ua0h")
+region_enabled = true
+region_rect = Rect2(1576.27, 367.387, 265.34, 687.601)
+
+[node name="Downarrow" type="Sprite2D" parent="."]
+position = Vector2(548, 151)
+scale = Vector2(0.727273, 0.65625)
+texture = ExtResource("5_4ua0h")
+region_enabled = true
+region_rect = Rect2(891.525, 133.431, 154.068, 128.39)
+
+[node name="Leftarrow" type="Sprite2D" parent="."]
+position = Vector2(471, 68)
+scale = Vector2(0.883838, 0.881443)
+texture = ExtResource("6_gm48p")
+region_enabled = true
+region_rect = Rect2(800.225, 73.5156, 99.8591, 97.006)
+
+[node name="emptyroom" parent="." instance=ExtResource("6_um6ld")]
+position = Vector2(600, 396)
+scale = Vector2(0.634208, 0.710549)
+script = ExtResource("7_gm48p")
+hover_tex = ExtResource("7_0negp")
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_left = 622.0
+offset_top = 97.0
+offset_right = 662.0
+offset_bottom = 120.0

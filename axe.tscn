@@ -1,17 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://bk0s78uruilmp"]
+[gd_scene load_steps=6 format=3 uid="uid://danl1ckl76lfc"]
 
 [ext_resource type="Script" uid="uid://boayo6ktcoe0d" path="res://axe.gd" id="1_5mfl6"]
 [ext_resource type="Texture2D" uid="uid://cv0mtxmeimegn" path="res://acess/emthyroom/o_1585465561_1e4ihoa891c7o3m9spr4fg12npb.png" id="2_ed3of"]
 [ext_resource type="Texture2D" uid="uid://cqorywquygvr" path="res://acess/emthyroom/o_1585465561_1e4ihoa891c7o3m9spr4fg12npb123123.png" id="3_rhasj"]
+[ext_resource type="Texture2D" uid="uid://doypyjx3bdpyy" path="res://acess/jail2/testboxaxe1.png" id="4_ed3of"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e5wbg"]
 size = Vector2(198.5, 370)
 
 [node name="axe" type="Area2D"]
-position = Vector2(453, 81)
+position = Vector2(0, -1)
 script = ExtResource("1_5mfl6")
 normal_tex = ExtResource("2_ed3of")
 hover_tex = ExtResource("3_rhasj")
+clicked_tex = ExtResource("4_ed3of")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(103, 197)
@@ -19,5 +21,11 @@ scale = Vector2(0.47, 0.47)
 texture = ExtResource("2_ed3of")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(106, 185)
+position = Vector2(105, 190)
 shape = SubResource("RectangleShape2D_e5wbg")
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_left = 301.0
+offset_top = 174.0
+offset_right = 922.0
+offset_bottom = 276.0

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://w51gv5o23b3c"]
+[gd_scene load_steps=7 format=3 uid="uid://w51gv5o23b3c"]
 
 [ext_resource type="Texture2D" uid="uid://d4f0dutoay546" path="res://acess/background mainmenu 2.png" id="1_owswg"]
+[ext_resource type="PackedScene" uid="uid://danl1ckl76lfc" path="res://axe.tscn" id="2_o70tu"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="3_08gkj"]
+[ext_resource type="Texture2D" uid="uid://gp10c8xqy52x" path="res://acess/Testinterrac.png" id="3_kgaip"]
+[ext_resource type="PackedScene" uid="uid://csardc7ccyw0c" path="res://stone.tscn" id="4_j7v4n"]
+
+[sub_resource type="FontVariation" id="FontVariation_j7v4n"]
+base_font = ExtResource("3_08gkj")
 
 [node name="room2" type="Node2D"]
 
@@ -8,3 +15,21 @@
 position = Vector2(577.75, 318.5)
 scale = Vector2(0.60026, 0.60463)
 texture = ExtResource("1_owswg")
+
+[node name="axe" parent="." instance=ExtResource("2_o70tu")]
+position = Vector2(168, 181)
+clicked_tex = ExtResource("3_kgaip")
+
+[node name="PopupLabel" type="Label" parent="."]
+visible = false
+offset_left = 273.0
+offset_top = 76.0
+offset_right = 842.0
+offset_bottom = 176.0
+theme_override_fonts/font = SubResource("FontVariation_j7v4n")
+theme_override_font_sizes/font_size = 61
+text = "dddddddddddddddddddddddd"
+horizontal_alignment = 1
+
+[node name="stone" parent="." instance=ExtResource("4_j7v4n")]
+position = Vector2(853, 464)
