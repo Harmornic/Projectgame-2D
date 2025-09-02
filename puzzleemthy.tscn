@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://b76dp4e2gjw71"]
+[gd_scene load_steps=4 format=3 uid="uid://b76dp4e2gjw71"]
 
+[ext_resource type="Script" uid="uid://cpnic8bo3e1yg" path="res://puzzleemthy.gd" id="1_18ixp"]
 [ext_resource type="Texture2D" uid="uid://bapdn1xtkmjpx" path="res://acess/puzzleroom/puzzleemthy.png" id="1_brtpf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_18ixp"]
 size = Vector2(322, 138)
 
 [node name="puzzleemthy" type="Area2D"]
+script = ExtResource("1_18ixp")
+normal_tex = ExtResource("1_brtpf")
 
-[node name="Puzzleemthy" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(4, -2)
 texture = ExtResource("1_brtpf")
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dks4r1ielnmug"
-path="res://.godot/imported/wood_AT.png-281d1a4dc286eae1a17baabdfc7eb20f.ctex"
+uid="uid://cnpr45vd1r0it"
+path="res://.godot/imported/axeinpuzzle.png-7537be221859396d3d7dcb24144ae24f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://acess/cavyRoom/wood_AT.png"
-dest_files=["res://.godot/imported/wood_AT.png-281d1a4dc286eae1a17baabdfc7eb20f.ctex"]
+source_file="res://acess/puzzleroom/axeinpuzzle.png"
+dest_files=["res://.godot/imported/axeinpuzzle.png-7537be221859396d3d7dcb24144ae24f.ctex"]
 
 [params]
 

@@ -1,0 +1,66 @@
+[gd_scene load_steps=13 format=3 uid="uid://ct6tc3tgr80rg"]
+
+[ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_45it4"]
+[ext_resource type="PackedScene" uid="uid://crvngaun6lm1y" path="res://emptydoor.tscn" id="2_mj47i"]
+[ext_resource type="PackedScene" uid="uid://ctc313jr6omi0" path="res://puzzledoor.tscn" id="3_nse1v"]
+[ext_resource type="PackedScene" uid="uid://noo8cesuxfgg" path="res://storagerdoor.tscn" id="4_mpduq"]
+[ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="5_iaj5d"]
+[ext_resource type="AudioStream" uid="uid://dfvoqum0f77hw" path="res://knock-on-a-door-327172.mp3" id="6_hmucm"]
+[ext_resource type="PackedScene" uid="uid://drg35leunbrcu" path="res://exittrue.tscn" id="8_e72vr"]
+[ext_resource type="PackedScene" uid="uid://pvd5j1302ck5" path="res://doorafterbreak.tscn" id="8_mj47i"]
+[ext_resource type="PackedScene" uid="uid://tpu6a8bjyhlf" path="res://arrowtobigroom.tscn" id="9_gdbwy"]
+[ext_resource type="Script" uid="uid://ieua154d33hq" path="res://arrowtobigroom.gd" id="10_ls83y"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="11_mj47i"]
+
+[sub_resource type="FontVariation" id="FontVariation_nse1v"]
+base_font = ExtResource("11_mj47i")
+
+[node name="breakwood" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(574.5, 326.75)
+scale = Vector2(0.600521, 0.60787)
+texture = ExtResource("1_45it4")
+
+[node name="emptyroom" parent="." instance=ExtResource("2_mj47i")]
+position = Vector2(154, 361)
+scale = Vector2(0.835, 0.835)
+
+[node name="puzzledoor" parent="." instance=ExtResource("3_nse1v")]
+position = Vector2(314, 264)
+scale = Vector2(0.855, 0.818464)
+
+[node name="Storagerdoor" parent="." instance=ExtResource("4_mpduq")]
+position = Vector2(828, 264)
+scale = Vector2(0.845, 0.845)
+normal_tex = null
+hover_tex = null
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="Storagerdoor"]
+stream = ExtResource("5_iaj5d")
+volume_db = -11.357
+
+[node name="LockedSound" type="AudioStreamPlayer" parent="Storagerdoor"]
+stream = ExtResource("6_hmucm")
+volume_db = -7.495
+
+[node name="exittrue" parent="." instance=ExtResource("8_e72vr")]
+position = Vector2(557, 195)
+scale = Vector2(0.785, 0.865)
+
+[node name="arrowtobigroom" parent="." instance=ExtResource("9_gdbwy")]
+position = Vector2(561, 604)
+script = ExtResource("10_ls83y")
+
+[node name="doorafterbreak" parent="." instance=ExtResource("8_mj47i")]
+position = Vector2(1033, 411)
+scale = Vector2(0.785, 0.785)
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_left = 318.0
+offset_top = 86.0
+offset_right = 785.0
+offset_bottom = 150.0
+theme_override_fonts/font = SubResource("FontVariation_nse1v")
+theme_override_font_sizes/font_size = 56
+horizontal_alignment = 1

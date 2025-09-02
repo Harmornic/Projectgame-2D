@@ -2,9 +2,12 @@ extends Area2D
 
 @export var normal_tex: Texture2D
 @export var hover_tex: Texture2D
-@export var clicked_tex: Texture2D
+@export var clicked_tex: Texture2D  # รูปหลังจากเก็บแล้ว
+@export var sprite_path: NodePath = NodePath("Sprite2D")
 
-@onready var sprite: Sprite2D = $Sprite2D
+@onready var sprite: Sprite2D = get_node(sprite_path)
+@onready var popup_label: Label = get_node("../../PopupLabel")
+
 var is_clicked := false
 
 func _ready() -> void:
@@ -23,20 +26,14 @@ func _on_mouse_exited() -> void:
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		if not Global.has_clicked_stone:
-			show_popup("ขวานถูกล็อคไว้อยู่")
-			return
-
-		Global.has_axe = true
-		sprite.texture = clicked_tex
-		is_clicked = true
-		show_popup("ได้รับ ขวานแล้ว!")
-		# ไม่ต้องซ่อน `visible = false` ถ้าอยากให้เห็นขวานเปลี่ยนรูปอยู่
-
-
+		if not Global.has_key2:
+			Global.has_key2 = true
+			is_clicked = true
+			if clicked_tex:
+				sprite.texture = clicked_tex
+			show_popup("คุณได้รับกุญแจดอกที่ 2")
 
 func show_popup(text: String):
-	var popup_label = get_tree().get_current_scene().get_node("PopupLabel")
 	if popup_label:
 		popup_label.text = text
 		popup_label.add_theme_color_override("font_color", Color("ADADAD"))  # สีทอง

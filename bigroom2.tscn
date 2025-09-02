@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c6qvipq20q0dt"]
+[gd_scene load_steps=11 format=3 uid="uid://bbr1l7s5jmx80"]
 
 [ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_oxusw"]
 [ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="5_6t2ie"]
@@ -49,3 +49,7 @@ scale = Vector2(0.785, 0.865)
 [node name="arrowtobigroom" parent="." instance=ExtResource("7_y6of1")]
 position = Vector2(561, 604)
 script = ExtResource("8_oxusw")
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

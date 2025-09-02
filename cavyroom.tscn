@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://rs64df4e8ybo"]
+[gd_scene load_steps=2 format=3 uid="uid://rs64df4e8ybo"]
 
-[node name="Cavyroom" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://b2eful8a6ia2t" path="res://acess/cavyRoom/background.jpg" id="1_yuk7q"]
+
+[node name="cavyroom" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(579.5, 328.5)
+scale = Vector2(0.604688, 0.615741)
+texture = ExtResource("1_yuk7q")

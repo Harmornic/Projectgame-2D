@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dks4r1ielnmug"
-path="res://.godot/imported/wood_AT.png-281d1a4dc286eae1a17baabdfc7eb20f.ctex"
+uid="uid://clffmhiceysks"
+path="res://.godot/imported/image.jpg-6af6b803e59295ce9b7eb7ffa54a064f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://acess/cavyRoom/wood_AT.png"
-dest_files=["res://.godot/imported/wood_AT.png-281d1a4dc286eae1a17baabdfc7eb20f.ctex"]
+source_file="res://acess/bigroom2/image.jpg"
+dest_files=["res://.godot/imported/image.jpg-6af6b803e59295ce9b7eb7ffa54a064f.ctex"]
 
 [params]
 

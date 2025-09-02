@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://pvd5j1302ck5"]
+
+[ext_resource type="Texture2D" uid="uid://0kjx5xwc24p7" path="res://acess/bigroom2/doorbreak.png" id="1_3ygt1"]
+[ext_resource type="Script" uid="uid://xff402bsmtvq" path="res://doorafterbreak.gd" id="1_q1sl3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q1sl3"]
+size = Vector2(281, 553)
+
+[node name="doorafterbreak" type="Area2D"]
+script = ExtResource("1_q1sl3")
+
+[node name="Doorbreak" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+texture = ExtResource("1_3ygt1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_q1sl3")
