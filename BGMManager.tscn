@@ -6,6 +6,6 @@
 
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_di44u")
-volume_db = -31.856
+volume_db = -25.297
 autoplay = true
 parameters/looping = true
