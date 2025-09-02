@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bbr1l7s5jmx80"]
+[gd_scene load_steps=13 format=3 uid="uid://bbr1l7s5jmx80"]
 
 [ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_oxusw"]
 [ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="5_6t2ie"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://drg35leunbrcu" path="res://exittrue.tscn" id="6_xeorm"]
 [ext_resource type="PackedScene" uid="uid://crvngaun6lm1y" path="res://emptydoor.tscn" id="6_y6of1"]
 [ext_resource type="PackedScene" uid="uid://tpu6a8bjyhlf" path="res://arrowtobigroom.tscn" id="7_y6of1"]
+[ext_resource type="Script" uid="uid://bttohsqp1oqnj" path="res://exittrue0.gd" id="8_3rxxu"]
 [ext_resource type="Script" uid="uid://ieua154d33hq" path="res://arrowtobigroom.gd" id="8_oxusw"]
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="10_6t2ie"]
 
@@ -52,6 +53,7 @@ scale = Vector2(0.865, 0.865)
 [node name="exittrue" parent="." instance=ExtResource("6_xeorm")]
 position = Vector2(557, 195)
 scale = Vector2(0.785, 0.865)
+script = ExtResource("8_3rxxu")
 
 [node name="arrowtobigroom" parent="." instance=ExtResource("7_y6of1")]
 position = Vector2(561, 604)
