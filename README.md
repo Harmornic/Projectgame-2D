@@ -128,7 +128,7 @@ https://docs.google.com/document/d/1cb0yAWd61n4JPL2daHhZD_tmM-zIGKadOToeLLNUpJg/
 
 จะมีข้อความขึ้นให้เห็นว่าประตูถูกล็อคอยู่
 
-เมื่อออกมาจากห้องแรก สามารถกดลูกศรเพื่อไปยัง
+เมื่อออกมาจากห้องแรก สามารถกดลูกศรเพื่อไปยังทางอื่นได้
 
 # อ้างอิง
 
@@ -140,7 +140,7 @@ https://www.f0nt.com/release/mn-hong-chao/
 
 https://www.f0nt.com/release/mn-suk13/
 
--Sound Effect
+- Sound Effect
 
 https://pixabay.com/sound-effects/creepy-ring-around-the-rosie-33890/
 
