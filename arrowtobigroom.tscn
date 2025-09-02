@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://tpu6a8bjyhlf"]
+
+[ext_resource type="Texture2D" uid="uid://doe3gmehlgpf0" path="res://acess/Bigroom/downarrow.png" id="1_2vokp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2vokp"]
+size = Vector2(68, 98)
+
+[node name="arrowtobigroom" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+texture = ExtResource("1_2vokp")
+region_enabled = true
+region_rect = Rect2(932, 143.25, 71.3901, 98.01)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -6)
+shape = SubResource("RectangleShape2D_2vokp")
