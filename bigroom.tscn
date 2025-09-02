@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://c0wtn3l1inluq"]
 
 [ext_resource type="Texture2D" uid="uid://bibn2ot4a1370" path="res://acess/Bigroom/backgrond.jpg" id="1_r15gn"]
-[ext_resource type="Texture2D" uid="uid://b61y65oq635c6" path="res://acess/Bigroom/Cavydoor.png" id="2_sycxv"]
 [ext_resource type="Texture2D" uid="uid://c20rgttehntvs" path="res://acess/Bigroom/Exitdoor.png" id="4_4ua0h"]
+[ext_resource type="Texture2D" uid="uid://cjxhok1tirygg" path="res://acess/Bigroom/f477e6ae0eed987c.png" id="7_0negp"]
 [ext_resource type="PackedScene" uid="uid://b8cyhhwvnsol7" path="res://backtostartroom.tscn" id="7_gm48p"]
 [ext_resource type="PackedScene" uid="uid://dpidwhod8dj6i" path="res://arrowtobigroom2.tscn" id="7_um6ld"]
 [ext_resource type="PackedScene" uid="uid://btddatnqnici4" path="res://lockdoor.tscn" id="9_0negp"]
@@ -17,13 +17,6 @@ base_font = ExtResource("9_4qfpx")
 position = Vector2(580.5, 328)
 scale = Vector2(0.603646, 0.607407)
 texture = ExtResource("1_r15gn")
-
-[node name="Cavydoor" type="Sprite2D" parent="."]
-position = Vector2(251, 413)
-scale = Vector2(0.67439, 0.655904)
-texture = ExtResource("2_sycxv")
-region_enabled = true
-region_rect = Rect2(258.133, 430.155, 410.849, 542.092)
 
 [node name="Exitdoor" type="Sprite2D" parent="."]
 position = Vector2(1019, 438)
@@ -52,3 +45,8 @@ scale = Vector2(1.41, 1.41)
 
 [node name="Arrowtobigroom2" parent="." instance=ExtResource("7_um6ld")]
 position = Vector2(134, 624)
+
+[node name="F477e6Ae0Eed987c" type="Sprite2D" parent="."]
+position = Vector2(653, 302)
+scale = Vector2(0.681944, 0.681944)
+texture = ExtResource("7_0negp")

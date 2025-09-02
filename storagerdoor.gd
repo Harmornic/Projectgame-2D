@@ -2,12 +2,11 @@ extends Area2D
 
 @export var normal_tex: Texture2D
 @export var hover_tex: Texture2D
-@export var sprite_path: NodePath = NodePath("Sprite2D")
 
-@onready var sprite: Sprite2D = get_node(sprite_path)
+@onready var sprite: Sprite2D = $Sprite2D # แก้ไขตรงนี้
+
 @onready var door_sound: AudioStreamPlayer = $DoorSound
 @onready var locked_sound: AudioStreamPlayer = $LockedSound
-
 
 func _ready() -> void:
 	if normal_tex:
@@ -25,6 +24,4 @@ func _on_mouse_exited() -> void:
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-			get_tree().change_scene_to_file("res://storageroom.tscn")
-			await door_sound.finished
-			get_tree().change_scene_to_file("res://storageroom.tscn")  # ✅ เปลี่ยน path ตรงนี้
+		get_tree().change_scene_to_file("res://storageroom.tscn")
