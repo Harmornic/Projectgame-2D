@@ -34,7 +34,7 @@
 # ตัวละคร
 
 ## Ole
-![Ole]()
+![Ole](https://github.com/user-attachments/assets/a707156b-4496-455f-a887-ddfc959561c9)
 
 ## วิญญาณหญิงสาว
 ![Ghost_Girl]()
