@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5qhemljphcxo"]
+
+[ext_resource type="Texture2D" uid="uid://bfhysff0dvhiu" path="res://acess/puzzleroom/background.jpg" id="1_iyema"]
+[ext_resource type="PackedScene" uid="uid://b76dp4e2gjw71" path="res://puzzleemthy.tscn" id="2_4ucec"]
+
+[node name="Puzzleroom" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(579.5, 323.5)
+scale = Vector2(0.601563, 0.610185)
+texture = ExtResource("1_iyema")
+
+[node name="puzzleemthy" parent="Background" instance=ExtResource("2_4ucec")]
+position = Vector2(-5.81818, -94.2337)

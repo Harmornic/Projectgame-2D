@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://drg35leunbrcu"]
+
+[ext_resource type="Texture2D" uid="uid://c43ngfeqki6j0" path="res://acess/bigroom2/trueexit.png" id="1_2r6h1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1fflf"]
+size = Vector2(206, 338)
+
+[node name="exittrue" type="Node2D"]
+
+[node name="Trueexit" type="Sprite2D" parent="."]
+position = Vector2(1, -2)
+texture = ExtResource("1_2r6h1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 10)
+shape = SubResource("RectangleShape2D_1fflf")
