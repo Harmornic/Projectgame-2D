@@ -19,7 +19,7 @@ scale = Vector2(0.603646, 0.607407)
 texture = ExtResource("1_r15gn")
 
 [node name="Cavydoor" type="Sprite2D" parent="."]
-position = Vector2(276, 425)
+position = Vector2(251, 413)
 scale = Vector2(0.67439, 0.655904)
 texture = ExtResource("2_sycxv")
 region_enabled = true

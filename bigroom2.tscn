@@ -19,15 +19,15 @@ scale = Vector2(0.600521, 0.60787)
 texture = ExtResource("1_oxusw")
 
 [node name="emptyroom" parent="." instance=ExtResource("6_y6of1")]
-position = Vector2(152, 346)
+position = Vector2(154, 361)
 scale = Vector2(0.835, 0.835)
 
 [node name="puzzledoor" parent="." instance=ExtResource("6_oxusw")]
-position = Vector2(320, 236)
-scale = Vector2(0.855, 0.855)
+position = Vector2(314, 264)
+scale = Vector2(0.855, 0.818464)
 
 [node name="Storagerdoor" parent="." instance=ExtResource("6_wm3nj")]
-position = Vector2(825, 249)
+position = Vector2(825, 264)
 scale = Vector2(0.845, 0.845)
 normal_tex = null
 hover_tex = null
@@ -41,11 +41,11 @@ stream = ExtResource("6_3rxxu")
 volume_db = -7.495
 
 [node name="Cavydoor" parent="." instance=ExtResource("5_a326s")]
-position = Vector2(1016, 360)
+position = Vector2(1024, 383)
 scale = Vector2(0.865, 0.865)
 
 [node name="exittrue" parent="." instance=ExtResource("6_xeorm")]
-position = Vector2(558, 185)
+position = Vector2(557, 195)
 scale = Vector2(0.865, 0.865)
 
 [node name="arrowtobigroom" parent="." instance=ExtResource("7_y6of1")]

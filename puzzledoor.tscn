@@ -1,16 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctc313jr6omi0"]
+[gd_scene load_steps=5 format=3 uid="uid://ctc313jr6omi0"]
 
+[ext_resource type="Script" uid="uid://c4eqn6an2d2gh" path="res://puzzledoor.gd" id="1_1fr78"]
 [ext_resource type="Texture2D" uid="uid://8abujue5vc7l" path="res://acess/bigroom2/puzzledoor.png" id="1_umen6"]
+[ext_resource type="Texture2D" uid="uid://bipyr1qd5yg8b" path="res://acess/bigroom2/puzzledoor_AFTER.png" id="3_hbqc2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1fr78"]
-size = Vector2(190, 458)
+size = Vector2(168, 447)
 
 [node name="puzzledoor" type="Area2D"]
+position = Vector2(589, 339)
+script = ExtResource("1_1fr78")
+normal_tex = ExtResource("1_umen6")
+hover_tex = ExtResource("3_hbqc2")
 
 [node name="Puzzledoor" type="Sprite2D" parent="."]
 position = Vector2(0, -1)
 texture = ExtResource("1_umen6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, 5)
+position = Vector2(-5, 1.5)
 shape = SubResource("RectangleShape2D_1fr78")
