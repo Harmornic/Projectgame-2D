@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://chsn1spnkkekk"]
+
+[ext_resource type="AudioStream" uid="uid://drvpegxmohgh5" path="res://mysterious-dark-background-384042.mp3" id="1_di44u"]
+
+[node name="BGMManager" type="Node"]
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_di44u")
+volume_db = -28.108
+autoplay = true
