@@ -11,10 +11,17 @@ config_version=5
 [application]
 
 config/name="Projectgame 2D"
-run/main_scene="uid://bgjtbwhkgirii"
+run/main_scene="uid://dfi7i4jdqm3ho"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://Global.gd"
+BGMManager="*res://BGMManager.tscn"
+
+[display]
+
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
