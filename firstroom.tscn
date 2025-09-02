@@ -25,8 +25,8 @@ position = Vector2(774, 462)
 hover_tex = SubResource("CompressedTexture2D_3nogi")
 
 [node name="Door1" parent="." instance=ExtResource("3_kmq28")]
-position = Vector2(400, 280)
-scale = Vector2(0.91922, 0.84)
+position = Vector2(325, 313)
+scale = Vector2(0.634208, 0.710549)
 hover_tex = ExtResource("4_qklje")
 
 [node name="PopupLabel" type="Label" parent="."]
@@ -37,7 +37,7 @@ offset_right = 1019.0
 offset_bottom = 183.0
 theme_override_colors/font_color = Color(0.635658, 0.628392, 0.622166, 1)
 theme_override_fonts/font = SubResource("FontVariation_lxmia")
-theme_override_font_sizes/font_size = 56
+theme_override_font_sizes/font_size = 45
 text = "ประตูล็อคอยู่ ต้องมีกุญแจก่อน"
 horizontal_alignment = 1
 vertical_alignment = 1
