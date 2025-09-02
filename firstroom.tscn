@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cuvdxiu53kk5j" path="res://acess/IMG_0920.jpg" id="1_kmq28"]
 [ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="3_kmq28"]
 [ext_resource type="PackedScene" uid="uid://tbujwbp55cud" path="res://Key.tscn" id="3_qklje"]
-[ext_resource type="Texture2D" uid="uid://dmvbmkhfgiba" path="res://Sprite-0025.png" id="4_qklje"]
+[ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="4_qklje"]
 
 [node name="Firstroom" type="Node2D"]
 
@@ -16,6 +16,6 @@ texture = ExtResource("1_kmq28")
 position = Vector2(774, 462)
 
 [node name="Door1" parent="." instance=ExtResource("3_kmq28")]
-position = Vector2(181, 286)
-scale = Vector2(0.908184, 0.84)
+position = Vector2(400, 280)
+scale = Vector2(0.91922, 0.84)
 hover_tex = ExtResource("4_qklje")
