@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6qvipq20q0dt"]
+[gd_scene load_steps=7 format=3 uid="uid://bc57hg7f1ihjk"]
 
 [ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_oxusw"]
-[ext_resource type="PackedScene" uid="uid://dcxh1sgsmh7hv" path="res://cavydoor.tscn" id="5_a326s"]
-[ext_resource type="PackedScene" uid="uid://ctc313jr6omi0" path="res://puzzledoor.tscn" id="6_oxusw"]
-[ext_resource type="PackedScene" uid="uid://noo8cesuxfgg" path="res://storagerdoor.tscn" id="6_wm3nj"]
-[ext_resource type="PackedScene" uid="uid://drg35leunbrcu" path="res://exittrue.tscn" id="6_xeorm"]
-[ext_resource type="PackedScene" uid="uid://cp35c2i5tlip4" path="res://emptydoor.tscn" id="6_y6of1"]
+[ext_resource type="PackedScene" path="res://cavydoor.tscn" id="5_a326s"]
+[ext_resource type="PackedScene" path="res://puzzledoor.tscn" id="6_oxusw"]
+[ext_resource type="PackedScene" path="res://storagerdoor.tscn" id="6_wm3nj"]
+[ext_resource type="PackedScene" path="res://exittrue.tscn" id="6_xeorm"]
+[ext_resource type="PackedScene" path="res://emptydoor.tscn" id="6_y6of1"]
 
 [node name="bigroom2" type="Node2D"]
 
