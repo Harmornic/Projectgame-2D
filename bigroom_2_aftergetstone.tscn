@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ba2v5441ioq3q"]
+[gd_scene load_steps=13 format=3 uid="uid://ba2v5441ioq3q"]
 
 [ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_c4kjy"]
 [ext_resource type="PackedScene" uid="uid://crvngaun6lm1y" path="res://emptydoor.tscn" id="2_7333a"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dcxh1sgsmh7hv" path="res://cavydoor.tscn" id="6_rn6hg"]
 [ext_resource type="PackedScene" uid="uid://drg35leunbrcu" path="res://exittrue.tscn" id="7_ylvtx"]
 [ext_resource type="PackedScene" uid="uid://tpu6a8bjyhlf" path="res://arrowtobigroom.tscn" id="8_46srn"]
+[ext_resource type="Script" uid="uid://bttohsqp1oqnj" path="res://exittrue0.gd" id="8_7333a"]
 [ext_resource type="Script" uid="uid://ieua154d33hq" path="res://arrowtobigroom.gd" id="9_e0d7o"]
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="10_cpof6"]
 
@@ -52,6 +53,7 @@ scale = Vector2(0.865, 0.865)
 [node name="exittrue" parent="." instance=ExtResource("7_ylvtx")]
 position = Vector2(557, 195)
 scale = Vector2(0.785, 0.865)
+script = ExtResource("8_7333a")
 
 [node name="arrowtobigroom" parent="." instance=ExtResource("8_46srn")]
 position = Vector2(561, 604)
