@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://crvngaun6lm1y"]
 
-[ext_resource type="Script" uid="uid://6rwkqog1dsa" path="res://emptyroom.gd" id="1_3jesl"]
+[ext_resource type="Script" uid="uid://bmk8pwq0aq82f" path="res://emptyroom.gd" id="1_3jesl"]
 [ext_resource type="Texture2D" uid="uid://co5766poa6cb4" path="res://acess/bigroom2/emthydoor.png" id="1_ceg6j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3jesl"]

@@ -1,22 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcdhcr8uyv6b3"]
+[gd_scene load_steps=3 format=3 uid="uid://bttnsklenwbgv"]
 
-[ext_resource type="Script" path="res://locker.gd" id="1_eks1q"]
-[ext_resource type="Texture2D" uid="uid://ifmh06267dom" path="res://acess/storage/locker_BF.png" id="2_a13x5"]
-[ext_resource type="Texture2D" uid="uid://c15ya7sqsug3e" path="res://acess/storage/locker_AT.png" id="3_7dpg0"]
+[ext_resource type="Texture2D" uid="uid://blfcxrlwq3ob1" path="res://acess/storage/locker.png" id="1_eks1q"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a13x5"]
-size = Vector2(318, 292)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hcspt"]
+size = Vector2(421, 396)
 
-[node name="locker" type="Area2D"]
-script = ExtResource("1_eks1q")
-normal_tex = ExtResource("2_a13x5")
-hover_tex = ExtResource("3_7dpg0")
+[node name="Locker" type="Area2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(552, 340)
-scale = Vector2(0.585605, 0.585605)
-texture = ExtResource("2_a13x5")
+[node name="Locker" type="Sprite2D" parent="."]
+position = Vector2(1, 1)
+texture = ExtResource("1_eks1q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(542, 340)
-shape = SubResource("RectangleShape2D_a13x5")
+position = Vector2(9.5, 9)
+shape = SubResource("RectangleShape2D_hcspt")

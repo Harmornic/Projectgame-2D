@@ -1,11 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://c2w578h8276m0"]
+[gd_scene load_steps=9 format=3 uid="uid://c0wtn3l1inluq"]
 
 [ext_resource type="Texture2D" uid="uid://bibn2ot4a1370" path="res://acess/Bigroom/backgrond.jpg" id="1_r15gn"]
 [ext_resource type="Texture2D" uid="uid://b61y65oq635c6" path="res://acess/Bigroom/Cavydoor.png" id="2_sycxv"]
 [ext_resource type="Texture2D" uid="uid://c20rgttehntvs" path="res://acess/Bigroom/Exitdoor.png" id="4_4ua0h"]
-[ext_resource type="PackedScene" path="res://backtostartroom.tscn" id="7_gm48p"]
-[ext_resource type="PackedScene" path="res://arrowtobigroom2.tscn" id="7_um6ld"]
-[ext_resource type="PackedScene" path="res://lockdoor.tscn" id="9_0negp"]
+[ext_resource type="PackedScene" uid="uid://b8cyhhwvnsol7" path="res://backtostartroom.tscn" id="7_gm48p"]
+[ext_resource type="PackedScene" uid="uid://dpidwhod8dj6i" path="res://arrowtobigroom2.tscn" id="7_um6ld"]
+[ext_resource type="PackedScene" uid="uid://btddatnqnici4" path="res://lockdoor.tscn" id="9_0negp"]
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="9_4qfpx"]
 
 [sub_resource type="FontVariation" id="FontVariation_mknfx"]

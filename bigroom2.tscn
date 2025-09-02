@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://bc57hg7f1ihjk"]
+[gd_scene load_steps=11 format=3 uid="uid://c6qvipq20q0dt"]
 
 [ext_resource type="Texture2D" uid="uid://w2ph6r7buqae" path="res://acess/bigroom2/background.jpg" id="1_oxusw"]
-[ext_resource type="PackedScene" path="res://cavydoor.tscn" id="5_a326s"]
-[ext_resource type="PackedScene" path="res://puzzledoor.tscn" id="6_oxusw"]
-[ext_resource type="PackedScene" path="res://storagerdoor.tscn" id="6_wm3nj"]
-[ext_resource type="PackedScene" path="res://exittrue.tscn" id="6_xeorm"]
-[ext_resource type="PackedScene" path="res://emptydoor.tscn" id="6_y6of1"]
+[ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="5_6t2ie"]
+[ext_resource type="PackedScene" uid="uid://dcxh1sgsmh7hv" path="res://cavydoor.tscn" id="5_a326s"]
+[ext_resource type="AudioStream" uid="uid://dfvoqum0f77hw" path="res://knock-on-a-door-327172.mp3" id="6_3rxxu"]
+[ext_resource type="PackedScene" uid="uid://ctc313jr6omi0" path="res://puzzledoor.tscn" id="6_oxusw"]
+[ext_resource type="PackedScene" uid="uid://noo8cesuxfgg" path="res://storagerdoor.tscn" id="6_wm3nj"]
+[ext_resource type="PackedScene" uid="uid://drg35leunbrcu" path="res://exittrue.tscn" id="6_xeorm"]
+[ext_resource type="PackedScene" uid="uid://crvngaun6lm1y" path="res://emptydoor.tscn" id="6_y6of1"]
+[ext_resource type="PackedScene" uid="uid://tpu6a8bjyhlf" path="res://arrowtobigroom.tscn" id="7_y6of1"]
+[ext_resource type="Script" uid="uid://ieua154d33hq" path="res://arrowtobigroom.gd" id="8_oxusw"]
 
 [node name="bigroom2" type="Node2D"]
 
@@ -25,6 +29,16 @@ scale = Vector2(0.855, 0.855)
 [node name="Storagerdoor" parent="." instance=ExtResource("6_wm3nj")]
 position = Vector2(825, 249)
 scale = Vector2(0.845, 0.845)
+normal_tex = null
+hover_tex = null
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="Storagerdoor"]
+stream = ExtResource("5_6t2ie")
+volume_db = -11.357
+
+[node name="LockedSound" type="AudioStreamPlayer" parent="Storagerdoor"]
+stream = ExtResource("6_3rxxu")
+volume_db = -7.495
 
 [node name="Cavydoor" parent="." instance=ExtResource("5_a326s")]
 position = Vector2(1016, 360)
@@ -33,3 +47,7 @@ scale = Vector2(0.865, 0.865)
 [node name="exittrue" parent="." instance=ExtResource("6_xeorm")]
 position = Vector2(558, 185)
 scale = Vector2(0.865, 0.865)
+
+[node name="arrowtobigroom" parent="." instance=ExtResource("7_y6of1")]
+position = Vector2(561, 604)
+script = ExtResource("8_oxusw")
