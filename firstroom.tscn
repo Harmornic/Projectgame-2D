@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgjtbwhkgirii"]
+[gd_scene load_steps=6 format=3 uid="uid://bgjtbwhkgirii"]
 
 [ext_resource type="Texture2D" uid="uid://cuvdxiu53kk5j" path="res://acess/IMG_0920.jpg" id="1_kmq28"]
 [ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="3_kmq28"]
 [ext_resource type="PackedScene" uid="uid://tbujwbp55cud" path="res://Key.tscn" id="3_qklje"]
 [ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="4_qklje"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3nogi"]
+load_path = "res://.godot/imported/Testinterrac.png-bacb730de2c20114e90b4eec92b2e8cb.ctex"
 
 [node name="Firstroom" type="Node2D"]
 
@@ -14,6 +17,7 @@ texture = ExtResource("1_kmq28")
 
 [node name="Key" parent="." instance=ExtResource("3_qklje")]
 position = Vector2(774, 462)
+hover_tex = SubResource("CompressedTexture2D_3nogi")
 
 [node name="Door1" parent="." instance=ExtResource("3_kmq28")]
 position = Vector2(400, 280)
