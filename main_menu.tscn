@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfi7i4jdqm3ho"]
+[gd_scene load_steps=7 format=3 uid="uid://dfi7i4jdqm3ho"]
 
 [ext_resource type="Texture2D" uid="uid://c7mts3u0igsdp" path="res://acess/background mainmenu 3.jpg" id="1_06t4h"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rhts7"]
 texture = ExtResource("1_06t4h")
 modulate_color = Color(0.843184, 0.843184, 0.843184, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_06t4h"]
+font_names = PackedStringArray("Chiller")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
 bg_color = Color(1, 1, 1, 1)
@@ -13,27 +16,36 @@ corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
+[sub_resource type="SystemFont" id="SystemFont_7vrkn"]
+font_names = PackedStringArray("Chiller")
+
+[sub_resource type="SystemFont" id="SystemFont_fu7sn"]
+font_names = PackedStringArray("Chiller")
+
 [node name="MainMenu" type="Node2D"]
 position = Vector2(562, 301)
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = -572.0
+offset_left = -567.0
 offset_top = -304.0
-offset_right = 589.0
+offset_right = 594.0
 offset_bottom = 354.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_rhts7")
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = -280.5
-offset_top = -61.5
-offset_right = 294.5
-offset_bottom = 123.5
+offset_left = -265.0
+offset_top = -33.0
+offset_right = 310.0
+offset_bottom = 179.0
+scale = Vector2(1.00656, 1.04)
 
 [node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 43
+theme_override_fonts/font = SubResource("SystemFont_06t4h")
+theme_override_font_sizes/font_size = 58
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Start Game"
 metadata/_edit_use_anchors_ = true
@@ -42,7 +54,8 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 43
+theme_override_fonts/font = SubResource("SystemFont_7vrkn")
+theme_override_font_sizes/font_size = 58
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Options"
 metadata/_edit_use_anchors_ = true
@@ -51,7 +64,8 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 43
+theme_override_fonts/font = SubResource("SystemFont_fu7sn")
+theme_override_font_sizes/font_size = 58
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Exit"
 metadata/_edit_use_anchors_ = true
