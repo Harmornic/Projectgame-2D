@@ -5,7 +5,7 @@ extends Area2D
 @export var sprite_path: NodePath = NodePath("Sprite2D")
 
 @onready var sprite: Sprite2D = get_node(sprite_path)
-
+@onready var door_sound: AudioStreamPlayer = $DoorSound # แก้ไขตรงนี้
 func _ready() -> void:
 	if normal_tex:
 		sprite.texture = normal_tex
@@ -22,4 +22,6 @@ func _on_mouse_exited() -> void:
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		door_sound.play()
+		await door_sound.finished
 		get_tree().change_scene_to_file("res://room2.tscn")

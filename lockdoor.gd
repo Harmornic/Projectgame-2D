@@ -2,7 +2,7 @@ extends Area2D
 
 @export var normal_tex: Texture2D
 @export var hover_tex: Texture2D
-
+@onready var locked_sound: AudioStreamPlayer = $LockedSound # แก้ไขตรงนี้
 @onready var sprite: Sprite2D = $Sprite2D
 
 func _ready() -> void:
@@ -21,6 +21,8 @@ func _on_mouse_exited() -> void:
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		locked_sound.play()
+		await locked_sound.finished
 		show_popup("ประตูล็อคอยู่!")
 
 func show_popup(text: String):

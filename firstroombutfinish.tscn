@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dei6ma30g7jdd"]
+[gd_scene load_steps=9 format=3 uid="uid://dei6ma30g7jdd"]
 
 [ext_resource type="Texture2D" uid="uid://cuvdxiu53kk5j" path="res://acess/IMG_0920.jpg" id="1_hgbx0"]
 [ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="2_lq32p"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="3_i4fav"]
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="4_dbrj8"]
 [ext_resource type="Texture2D" uid="uid://f8vglpt2wbna" path="res://acess/jail1/bed1.png" id="5_c7odn"]
+[ext_resource type="AudioStream" uid="uid://bm1wnmxo0lcn0" path="res://mortice-door-lock-being-locked-and-unlocked-95884.mp3" id="5_i4fav"]
 
 [sub_resource type="FontVariation" id="FontVariation_lxmia"]
 fallbacks = Array[Font]([ExtResource("4_dbrj8")])
@@ -24,6 +25,10 @@ position = Vector2(325, 313)
 scale = Vector2(0.634208, 0.710549)
 script = ExtResource("3_hgbx0")
 hover_tex = ExtResource("3_i4fav")
+
+[node name="DoorSound" type="AudioStreamPlayer" parent="Door1butfinish"]
+stream = ExtResource("5_i4fav")
+volume_db = -11.357
 
 [node name="PopupLabel" type="Label" parent="."]
 visible = false

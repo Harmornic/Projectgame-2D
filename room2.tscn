@@ -27,8 +27,10 @@ text = "dddddddddddddddddddddddd"
 horizontal_alignment = 1
 
 [node name="axe" parent="." instance=ExtResource("2_o70tu")]
-position = Vector2(136, 292)
+position = Vector2(157, 294)
+rotation = 0.0343201
 scale = Vector2(0.55, 0.55)
+skew = 0.127409
 
 [node name="Arrowtobig2" parent="." instance=ExtResource("5_kgaip")]
 position = Vector2(586, 602)

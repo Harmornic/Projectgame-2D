@@ -6,7 +6,6 @@ extends Area2D
 @onready var sprite: Sprite2D = $Sprite2D # แก้ไขตรงนี้
 
 @onready var door_sound: AudioStreamPlayer = $DoorSound
-@onready var locked_sound: AudioStreamPlayer = $LockedSound
 
 func _ready() -> void:
 	if normal_tex:
@@ -24,4 +23,6 @@ func _on_mouse_exited() -> void:
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		door_sound.play()
+		await door_sound.finished
 		get_tree().change_scene_to_file("res://storageroom.tscn")

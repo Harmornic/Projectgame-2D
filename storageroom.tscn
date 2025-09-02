@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://clfjb5qq6gap3"]
+[gd_scene load_steps=9 format=3 uid="uid://clfjb5qq6gap3"]
 
 [ext_resource type="Texture2D" uid="uid://bvb0ek2i31ho5" path="res://acess/storage/background.jpg" id="1_xjdkg"]
 [ext_resource type="PackedScene" uid="uid://csardc7ccyw0c" path="res://stone.tscn" id="2_333hj"]
 [ext_resource type="Texture2D" uid="uid://dn0imxrtv71uh" path="res://acess/storage/stone - Copy.png" id="3_rpw5p"]
 [ext_resource type="PackedScene" uid="uid://bttnsklenwbgv" path="res://locker.tscn" id="3_xjdkg"]
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="4_4pjif"]
+[ext_resource type="AudioStream" uid="uid://dw1q16igtw0m1" path="res://acess/storage/stoneblockdragwoodgrind-82327.mp3" id="4_lykea"]
 [ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="5_sspwo"]
 
 [sub_resource type="FontVariation" id="FontVariation_sspwo"]
@@ -20,6 +21,10 @@ texture = ExtResource("1_xjdkg")
 [node name="stone" parent="." instance=ExtResource("2_333hj")]
 position = Vector2(585, 468)
 hover_tex = ExtResource("3_rpw5p")
+
+[node name="stonegrab" type="AudioStreamPlayer" parent="stone"]
+stream = ExtResource("4_lykea")
+volume_db = -27.171
 
 [node name="Locker" parent="." instance=ExtResource("3_xjdkg")]
 position = Vector2(279, 486)

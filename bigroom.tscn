@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cue714xwx7ipu"]
+[gd_scene load_steps=10 format=3 uid="uid://c0wtn3l1inluq"]
 
 [ext_resource type="Texture2D" uid="uid://bibn2ot4a1370" path="res://acess/Bigroom/backgrond.jpg" id="1_r15gn"]
 [ext_resource type="Texture2D" uid="uid://c20rgttehntvs" path="res://acess/Bigroom/Exitdoor.png" id="4_4ua0h"]
+[ext_resource type="AudioStream" uid="uid://dfvoqum0f77hw" path="res://knock-on-a-door-327172.mp3" id="5_um6ld"]
 [ext_resource type="Texture2D" uid="uid://cjxhok1tirygg" path="res://acess/Bigroom/f477e6ae0eed987c.png" id="7_0negp"]
 [ext_resource type="PackedScene" uid="uid://b8cyhhwvnsol7" path="res://backtostartroom.tscn" id="7_gm48p"]
 [ext_resource type="PackedScene" uid="uid://dpidwhod8dj6i" path="res://arrowtobigroom2.tscn" id="7_um6ld"]
@@ -19,9 +20,9 @@ scale = Vector2(0.603646, 0.607407)
 texture = ExtResource("1_r15gn")
 
 [node name="Exitdoor" type="Sprite2D" parent="."]
-position = Vector2(1019, 438)
-rotation = 0.04094
-scale = Vector2(0.727359, 0.55131)
+position = Vector2(1019, 410)
+rotation = 0.000714909
+scale = Vector2(0.831189, 0.706361)
 texture = ExtResource("4_4ua0h")
 region_enabled = true
 region_rect = Rect2(1576.27, 367.387, 265.34, 687.601)
@@ -39,6 +40,10 @@ metadata/_edit_use_anchors_ = true
 [node name="Lockdoor" parent="." instance=ExtResource("9_0negp")]
 position = Vector2(603, 379)
 
+[node name="LockedSound" type="AudioStreamPlayer" parent="Lockdoor"]
+stream = ExtResource("5_um6ld")
+volume_db = -7.495
+
 [node name="Backtostartroom" parent="." instance=ExtResource("7_gm48p")]
 position = Vector2(740, 619)
 scale = Vector2(1.41, 1.41)
@@ -47,6 +52,6 @@ scale = Vector2(1.41, 1.41)
 position = Vector2(134, 624)
 
 [node name="F477e6Ae0Eed987c" type="Sprite2D" parent="."]
-position = Vector2(653, 302)
+position = Vector2(711, 295)
 scale = Vector2(0.681944, 0.681944)
 texture = ExtResource("7_0negp")
