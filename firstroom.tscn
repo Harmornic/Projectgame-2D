@@ -23,7 +23,7 @@ scale = Vector2(0.602083, 0.601852)
 texture = ExtResource("1_kmq28")
 
 [node name="Key" parent="." instance=ExtResource("3_qklje")]
-position = Vector2(774, 544)
+position = Vector2(992, 477)
 hover_tex = SubResource("CompressedTexture2D_3nogi")
 
 [node name="Door1" parent="." instance=ExtResource("3_kmq28")]
@@ -45,8 +45,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Bed1" type="Sprite2D" parent="."]
-position = Vector2(741, 511)
-scale = Vector2(0.743807, 0.637427)
+position = Vector2(754, 449)
+scale = Vector2(0.837636, 0.717836)
 texture = ExtResource("6_lxmia")
 region_enabled = true
 region_rect = Rect2(802.44, 648.811, 767.489, 342.374)

@@ -8,15 +8,16 @@
 size = Vector2(198.5, 370)
 
 [node name="axe" type="Area2D"]
+position = Vector2(453, 81)
 script = ExtResource("1_5mfl6")
 normal_tex = ExtResource("2_ed3of")
 hover_tex = ExtResource("3_rhasj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(520, 315)
+position = Vector2(103, 197)
 scale = Vector2(0.47, 0.47)
 texture = ExtResource("2_ed3of")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(523.75, 305)
+position = Vector2(106, 185)
 shape = SubResource("RectangleShape2D_e5wbg")
