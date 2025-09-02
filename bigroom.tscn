@@ -32,14 +32,16 @@ region_enabled = true
 region_rect = Rect2(1576.27, 367.387, 265.34, 687.601)
 
 [node name="Downarrow" type="Sprite2D" parent="."]
-position = Vector2(548, 151)
+position = Vector2(675, 624)
+rotation = -0.00977836
 scale = Vector2(0.727273, 0.65625)
+skew = -0.66497
 texture = ExtResource("5_4ua0h")
 region_enabled = true
 region_rect = Rect2(891.525, 133.431, 154.068, 128.39)
 
 [node name="Leftarrow" type="Sprite2D" parent="."]
-position = Vector2(471, 68)
+position = Vector2(174, 620)
 scale = Vector2(0.883838, 0.881443)
 texture = ExtResource("6_gm48p")
 region_enabled = true
