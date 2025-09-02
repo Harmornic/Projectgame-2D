@@ -17,38 +17,40 @@ scale = Vector2(0.603646, 0.607407)
 texture = ExtResource("1_r15gn")
 
 [node name="Cavydoor" type="Sprite2D" parent="."]
-position = Vector2(276, 425)
-scale = Vector2(0.67439, 0.655904)
+position = Vector2(308.938, 410.321)
+scale = Vector2(0.746646, 0.70638)
 texture = ExtResource("2_sycxv")
 region_enabled = true
 region_rect = Rect2(258.133, 430.155, 410.849, 542.092)
 
 [node name="Exitdoor" type="Sprite2D" parent="."]
-position = Vector2(1019, 438)
-rotation = 0.04094
-scale = Vector2(0.727359, 0.55131)
+position = Vector2(1016, 405)
+rotation = 0.00964309
+scale = Vector2(0.695175, 0.719131)
 texture = ExtResource("4_4ua0h")
 region_enabled = true
 region_rect = Rect2(1576.27, 367.387, 265.34, 687.601)
 
 [node name="Downarrow" type="Sprite2D" parent="."]
-position = Vector2(675, 624)
+position = Vector2(689, 622)
 rotation = -0.00977836
-scale = Vector2(0.727273, 0.65625)
+scale = Vector2(0.916699, 0.827177)
 skew = -0.66497
 texture = ExtResource("5_4ua0h")
 region_enabled = true
 region_rect = Rect2(891.525, 133.431, 154.068, 128.39)
 
 [node name="Leftarrow" type="Sprite2D" parent="."]
-position = Vector2(174, 620)
-scale = Vector2(0.883838, 0.881443)
+position = Vector2(125, 613)
+rotation = -0.127409
+scale = Vector2(0.93365, 0.93112)
+skew = -0.476475
 texture = ExtResource("6_gm48p")
 region_enabled = true
 region_rect = Rect2(800.225, 73.5156, 99.8591, 97.006)
 
 [node name="emptyroom" parent="." instance=ExtResource("6_um6ld")]
-position = Vector2(600, 396)
+position = Vector2(591, 403)
 scale = Vector2(0.634208, 0.710549)
 script = ExtResource("7_gm48p")
 hover_tex = ExtResource("7_0negp")

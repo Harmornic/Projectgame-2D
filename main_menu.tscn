@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dfi7i4jdqm3ho"]
+[gd_scene load_steps=8 format=3 uid="uid://dfi7i4jdqm3ho"]
 
 [ext_resource type="Texture2D" uid="uid://c7mts3u0igsdp" path="res://acess/background mainmenu 3.jpg" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://cvws7hoo6fwlf" path="res://start.gd" id="2_7vrkn"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rhts7"]
 texture = ExtResource("1_06t4h")
@@ -48,6 +49,7 @@ theme_override_fonts/font = SubResource("SystemFont_06t4h")
 theme_override_font_sizes/font_size = 58
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Start Game"
+script = ExtResource("2_7vrkn")
 metadata/_edit_use_anchors_ = true
 
 [node name="Options" type="Button" parent="VBoxContainer"]
@@ -69,3 +71,5 @@ theme_override_font_sizes/font_size = 58
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Exit"
 metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="VBoxContainer/Start" to="VBoxContainer/Start" method="_on_pressed"]
