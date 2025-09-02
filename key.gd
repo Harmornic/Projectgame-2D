@@ -2,14 +2,11 @@ extends Area2D
 
 @export var normal_tex: Texture2D
 @export var hover_tex: Texture2D
-@export var sprite_path: NodePath = NodePath("Sprite2D")  # ค่าเริ่มต้น
+@export var sprite_path: NodePath = NodePath("Sprite2D")
 
 @onready var sprite: Sprite2D = get_node(sprite_path)
 
 func _ready() -> void:
-	if sprite == null:
-		push_error("Sprite path not set on %s" % name)
-		return
 	if normal_tex:
 		sprite.texture = normal_tex
 	mouse_entered.connect(_on_mouse_entered)
@@ -22,3 +19,9 @@ func _on_mouse_entered() -> void:
 func _on_mouse_exited() -> void:
 	if normal_tex:
 		sprite.texture = normal_tex
+
+func _input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		Global.has_key = true               # เก็บกุญแจ
+		visible = false                     # ซ่อนตัวเอง
+		set_process(false)                  # ปิดการทำงานเพิ่มความปลอดภัย

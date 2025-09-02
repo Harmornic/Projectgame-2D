@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnj4xruhlss2i"
-path="res://.godot/imported/Testinterrac.png-bacb730de2c20114e90b4eec92b2e8cb.ctex"
+uid="uid://cb13dywhqhq6j"
+path="res://.godot/imported/Testinterrac.png-cf9aed8e3fc2d5aad4983ef65045ff25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://acess/jail1/Testinterrac.png"
-dest_files=["res://.godot/imported/Testinterrac.png-bacb730de2c20114e90b4eec92b2e8cb.ctex"]
+source_file="res://acess/Testinterrac.png"
+dest_files=["res://.godot/imported/Testinterrac.png-cf9aed8e3fc2d5aad4983ef65045ff25.ctex"]
 
 [params]
 
