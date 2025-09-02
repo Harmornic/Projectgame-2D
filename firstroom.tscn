@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bgjtbwhkgirii"]
+[gd_scene load_steps=9 format=3 uid="uid://bgjtbwhkgirii"]
 
 [ext_resource type="Texture2D" uid="uid://cuvdxiu53kk5j" path="res://acess/IMG_0920.jpg" id="1_kmq28"]
 [ext_resource type="PackedScene" uid="uid://dijcdjxqmef7i" path="res://door1.tscn" id="3_kmq28"]
 [ext_resource type="PackedScene" uid="uid://tbujwbp55cud" path="res://Key.tscn" id="3_qklje"]
 [ext_resource type="Texture2D" uid="uid://bo507mqm5hdxh" path="res://acess/door_hover.png" id="4_qklje"]
 [ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="5_faovc"]
+[ext_resource type="Texture2D" uid="uid://f8vglpt2wbna" path="res://acess/jail1/bed1.png" id="6_lxmia"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3nogi"]
 load_path = "res://.godot/imported/Testinterrac.png-bacb730de2c20114e90b4eec92b2e8cb.ctex"
@@ -14,6 +15,7 @@ fallbacks = Array[Font]([ExtResource("5_faovc")])
 base_font = ExtResource("5_faovc")
 
 [node name="Firstroom" type="Node2D"]
+position = Vector2(4, 0)
 
 [node name="jail1" type="Sprite2D" parent="."]
 position = Vector2(575, 322)
@@ -21,7 +23,7 @@ scale = Vector2(0.602083, 0.601852)
 texture = ExtResource("1_kmq28")
 
 [node name="Key" parent="." instance=ExtResource("3_qklje")]
-position = Vector2(774, 462)
+position = Vector2(774, 544)
 hover_tex = SubResource("CompressedTexture2D_3nogi")
 
 [node name="Door1" parent="." instance=ExtResource("3_kmq28")]
@@ -41,3 +43,10 @@ theme_override_font_sizes/font_size = 45
 text = "ประตูล็อคอยู่ ต้องมีกุญแจก่อน"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Bed1" type="Sprite2D" parent="."]
+position = Vector2(741, 511)
+scale = Vector2(0.743807, 0.637427)
+texture = ExtResource("6_lxmia")
+region_enabled = true
+region_rect = Rect2(802.44, 648.811, 767.489, 342.374)
