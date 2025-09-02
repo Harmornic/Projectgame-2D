@@ -13,9 +13,9 @@ scale = Vector2(0.602083, 0.601852)
 texture = ExtResource("1_kmq28")
 
 [node name="Key" parent="." instance=ExtResource("3_qklje")]
-position = Vector2(769, 463)
+position = Vector2(774, 462)
 
 [node name="Door1" parent="." instance=ExtResource("3_kmq28")]
-position = Vector2(369, 279)
+position = Vector2(181, 286)
 scale = Vector2(0.908184, 0.84)
 hover_tex = ExtResource("4_qklje")
