@@ -1,3 +1,31 @@
-[gd_scene load_steps=0 format=3 uid="uid://clfjb5qq6gap3"]
+[gd_scene load_steps=6 format=3 uid="uid://clfjb5qq6gap3"]
+
+[ext_resource type="Texture2D" uid="uid://bvb0ek2i31ho5" path="res://acess/storage/background.jpg" id="1_xjdkg"]
+[ext_resource type="PackedScene" uid="uid://csardc7ccyw0c" path="res://stone.tscn" id="2_333hj"]
+[ext_resource type="PackedScene" uid="uid://bttnsklenwbgv" path="res://locker.tscn" id="3_xjdkg"]
+[ext_resource type="FontFile" uid="uid://eehe1so3rxv3" path="res://acess/font/MN Hong Chao.ttf" id="4_4pjif"]
+
+[sub_resource type="FontVariation" id="FontVariation_sspwo"]
+base_font = ExtResource("4_4pjif")
 
 [node name="Storageroom" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(575.5, 322.5)
+scale = Vector2(0.601563, 0.60463)
+texture = ExtResource("1_xjdkg")
+
+[node name="stone" parent="." instance=ExtResource("2_333hj")]
+position = Vector2(553, 507)
+
+[node name="Locker" parent="." instance=ExtResource("3_xjdkg")]
+position = Vector2(279, 486)
+scale = Vector2(0.765, 0.765)
+
+[node name="PopupLabel" type="Label" parent="."]
+offset_left = 368.0
+offset_top = 109.0
+offset_right = 799.0
+offset_bottom = 184.0
+theme_override_fonts/font = SubResource("FontVariation_sspwo")
+theme_override_font_sizes/font_size = 66
