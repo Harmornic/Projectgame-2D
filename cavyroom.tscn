@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://rs64df4e8ybo"]
 
-[ext_resource type="Texture2D" uid="uid://b2eful8a6ia2t" path="res://acess/cavyRoom/background.jpg" id="1_yuk7q"]
+[ext_resource type="Texture2D" uid="uid://b2eful8a6ia2t" path="res://acess/CavyRoom/background.jpg" id="1_yuk7q"]
 [ext_resource type="PackedScene" uid="uid://jo15jwa3rk05" path="res://keypuzzle.tscn" id="2_5psjr"]
 
 [node name="cavyroom" type="Node2D"]

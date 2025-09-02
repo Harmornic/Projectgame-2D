@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5qhemljphcxo"]
+[gd_scene load_steps=8 format=3 uid="uid://c5qhemljphcxo"]
 
 [ext_resource type="Texture2D" uid="uid://bfhysff0dvhiu" path="res://acess/puzzleroom/background.jpg" id="1_iyema"]
 [ext_resource type="PackedScene" uid="uid://b76dp4e2gjw71" path="res://puzzleemthy.tscn" id="2_4ucec"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cnpr45vd1r0it" path="res://acess/puzzleroom/axeinpuzzle.png" id="3_2abri"]
 [ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="4_x8jh2"]
 [ext_resource type="Script" uid="uid://bv1g35da3vis3" path="res://arrowtobigafterpuzzle.gd" id="5_lbrdl"]
+[ext_resource type="AudioStream" uid="uid://b76ah34vh8ahq" path="res://acess/puzzleroom/creepy-ring-around-the-rosie-33890.mp3" id="6_cfd4d"]
 
 [node name="Puzzleroom" type="Node2D"]
 
@@ -21,6 +22,10 @@ clicked_tex = ExtResource("3_2abri")
 [node name="Arrowtobigafterpuzzle" parent="Background/puzzleemthy" instance=ExtResource("4_x8jh2")]
 position = Vector2(28.2597, 573.596)
 script = ExtResource("5_lbrdl")
+
+[node name="WomanSongPlayer" type="AudioStreamPlayer" parent="Background/puzzleemthy"]
+stream = ExtResource("6_cfd4d")
+volume_db = -11.143
 
 [node name="PopupLabel" type="Label" parent="."]
 offset_left = 337.0

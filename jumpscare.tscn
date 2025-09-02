@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3f25uqeml6ry"]
+[gd_scene load_steps=7 format=3 uid="uid://b3f25uqeml6ry"]
 
-[ext_resource type="Texture2D" uid="uid://b2eful8a6ia2t" path="res://acess/cavyRoom/background.jpg" id="1_dkw4f"]
-[ext_resource type="Texture2D" uid="uid://c8oqlll5y2733" path="res://acess/cavyRoom/cavy.png" id="2_6rciv"]
+[ext_resource type="Texture2D" uid="uid://b2eful8a6ia2t" path="res://acess/CavyRoom/background.jpg" id="1_dkw4f"]
+[ext_resource type="Texture2D" uid="uid://c8oqlll5y2733" path="res://acess/CavyRoom/cavy.png" id="2_6rciv"]
 [ext_resource type="PackedScene" uid="uid://bb1xsg4cpaqtb" path="res://arrowtobig2.tscn" id="3_6rciv"]
 [ext_resource type="Script" uid="uid://dtxrj0uqvtgm0" path="res://arrowtobig2after.gd" id="4_4qc3y"]
+[ext_resource type="AudioStream" uid="uid://bebxqr0tr7bwc" path="res://acess/CavyRoom/jumpscare-v3-335600.mp3" id="5_578iv"]
+[ext_resource type="Script" uid="uid://5kkgpy3qnipy" path="res://jumpscare_sound.gd.gd" id="6_6gnpd"]
 
 [node name="jumpscare" type="Node2D"]
 
@@ -14,7 +16,7 @@ texture = ExtResource("1_dkw4f")
 
 [node name="Cavy" type="Sprite2D" parent="."]
 position = Vector2(577, 335)
-scale = Vector2(0.771875, 0.734259)
+scale = Vector2(0.867, 0.824)
 texture = ExtResource("2_6rciv")
 
 [node name="Arrowtobig2after" parent="." instance=ExtResource("3_6rciv")]
@@ -24,3 +26,8 @@ script = ExtResource("4_4qc3y")
 [node name="PopupLabel" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_578iv")
+volume_db = -9.37
+script = ExtResource("6_6gnpd")
