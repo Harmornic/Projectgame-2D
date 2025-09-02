@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://csardc7ccyw0c"]
+
+[ext_resource type="Script" uid="uid://c82j15neufgid" path="res://stone.gd" id="1_rq0vd"]
+[ext_resource type="Texture2D" uid="uid://b5lhsdjemslvi" path="res://acess/emthyroom/image-removebg-preview.png" id="2_cxlo0"]
+[ext_resource type="Texture2D" uid="uid://bqfome2i2s2rx" path="res://acess/emthyroom/image-removebg-preview123.png" id="3_cxlo0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rot5g"]
+size = Vector2(50, 34)
+
+[node name="stone" type="Area2D"]
+script = ExtResource("1_rq0vd")
+normal_tex = ExtResource("2_cxlo0")
+hover_tex = ExtResource("3_cxlo0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(863, 414)
+scale = Vector2(0.144, 0.144)
+texture = ExtResource("2_cxlo0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(863, 414)
+shape = SubResource("RectangleShape2D_rot5g")
